@@ -34,6 +34,32 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 
 ## 🧳 Preparativos hospital / bolsa ✨✨✨
 
+### 🔋 Tecnología y preparación ✨✨✨
+
+- Cargar móviles
+- Preparar cascos
+- Llevar cargadores
+- Llevar powerbank
+
+### 🚗 Logística ✨✨✨
+
+- Dejar coche listo
+  - Gasolina
+  - Sillita instalada
+
+### 🍱 Comida hospital ✨✨✨
+
+- Preparar comida para el hospital
+- Tuppers
+- Snacks
+
+### 🧳 Bolsa hospital ✨✨✨
+
+- Preparar las 3 maletas:
+  - Madre
+  - Padre
+  - Hija
+
 ### 👩 Madre ✨✨✨
 
 - Toallas (incluye pequeñas específicas compradas)
