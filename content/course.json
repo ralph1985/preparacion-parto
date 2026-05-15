@@ -1,0 +1,91 @@
+{
+  "title": "Preparación al parto",
+  "modules": [
+    {
+      "id": "prepararse",
+      "title": "1. Prepararse antes del parto",
+      "lessons": [
+        {
+          "id": "final-embarazo",
+          "title": "Final del embarazo",
+          "file": "./content/modules/01-final-embarazo.md"
+        },
+        {
+          "id": "senales-parto",
+          "title": "Señales de parto y alarma",
+          "file": "./content/modules/02-senales-parto.md"
+        },
+        {
+          "id": "plan-parto",
+          "title": "Plan de parto y bolsa",
+          "file": "./content/modules/03-plan-parto.md"
+        }
+      ]
+    },
+    {
+      "id": "parto",
+      "title": "2. El parto",
+      "lessons": [
+        {
+          "id": "fases-parto",
+          "title": "Fases del parto",
+          "file": "./content/modules/04-fases-parto.md"
+        },
+        {
+          "id": "alivio-dolor",
+          "title": "Respiración, movimiento y dolor",
+          "file": "./content/modules/05-alivio-dolor.md"
+        },
+        {
+          "id": "intervenciones",
+          "title": "Intervenciones frecuentes",
+          "file": "./content/modules/06-intervenciones.md"
+        }
+      ]
+    },
+    {
+      "id": "primeras-horas",
+      "title": "3. Primeras horas tras el nacimiento",
+      "lessons": [
+        {
+          "id": "primeras-horas",
+          "title": "Piel con piel y primeras revisiones",
+          "file": "./content/modules/07-primeras-horas.md"
+        }
+      ]
+    },
+    {
+      "id": "postparto",
+      "title": "4. Postparto",
+      "lessons": [
+        {
+          "id": "puerperio",
+          "title": "Puerperio físico y emocional",
+          "file": "./content/modules/08-puerperio.md"
+        }
+      ]
+    },
+    {
+      "id": "lactancia",
+      "title": "5. Lactancia y alimentación",
+      "lessons": [
+        {
+          "id": "lactancia",
+          "title": "Inicio de lactancia y alimentación",
+          "file": "./content/modules/09-lactancia.md"
+        }
+      ]
+    },
+    {
+      "id": "bebe",
+      "title": "6. Cuidados del bebé",
+      "lessons": [
+        {
+          "id": "cuidados-bebe",
+          "title": "Cuidados básicos del recién nacido",
+          "file": "./content/modules/10-cuidados-bebe.md"
+        }
+      ]
+    }
+  ]
+}
