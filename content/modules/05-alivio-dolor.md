@@ -15,6 +15,12 @@ El dolor de parto cambia según la fase, la posición del bebé, el cansancio, e
 
 Completar con las opciones del centro: epidural, analgesia inhalada si existe, medicación u otras alternativas.
 
+## 🎵 Música para el parto ✨✨✨
+
+- Yungblud
+- Música yoga
+- Llevar cascos y cargador
+
 ## Para el acompañante
 
 Observar, ofrecer agua, ayudar con posturas, proteger el ambiente y comunicar necesidades cuando la madre no quiera hablar.

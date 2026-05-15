@@ -12,6 +12,11 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 - Tomas frecuentes.
 - Dolor, grietas, ingurgitación y mastitis.
 
+### 🍼 Lactancia ✨✨✨
+
+- Calostro: primera leche, alta en defensas
+- Pedir colector de calostro
+
 ## Otras opciones de alimentación
 
 Añadir información respetuosa sobre extracción, conservación, lactancia mixta o alimentación con fórmula cuando sea necesario.
