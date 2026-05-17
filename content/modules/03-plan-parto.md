@@ -127,6 +127,17 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 
 ## 🧳 Preparativos hospital / bolsa ✨✨✨
 
+### 🧳 Recordatorios importantes ✨✨✨
+
+- Imprimir o tener accesible el PRAN / Plan de Parto
+- Llevar documentación preparada:
+  - DNI
+  - tarjeta sanitaria
+  - libro de familia / partida de matrimonio si aplica
+- Preparar playlist para el parto
+- Descargar música offline por si falla internet/cobertura
+- Revisar móviles, baterías y cargadores antes de salir
+
 ### 🔋 Tecnología y preparación ✨✨✨
 
 - Cargar móviles
@@ -155,15 +166,15 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 
 ### 👩 Madre ✨✨✨
 
+- Bebida isotónica / agua de coco
 - Toallas (incluye pequeñas específicas compradas)
 - Saco de semillas (para dolor/relajación)
-- Agua / agua de coco
+- Agua
 - Bragas desechables (talla S o M)
 - Zapatillas cómodas
 - Goma del pelo
 - Abanico
 - Cacao para los labios
-- Bebida isotónica
 - Frutos secos
 - Plátanos
 - Esencia de lavanda
@@ -179,9 +190,11 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 
 ### 👨 Padre / acompañante ✨✨✨
 
-- Comida
+- Llevar comida/snacks
 - Tuppers
-- Ropa de abrigo (puede hacer frío en el hospital)
+- Puede hacer frío en el hospital → llevar abrigo/sudadera
+- Llevar bebida
+- Llevar ropa cómoda para muchas horas
 
 ### 👶 Bebé (Irati) ✨✨✨
 

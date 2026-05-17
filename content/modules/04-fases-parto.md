@@ -20,6 +20,16 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 
 ## 🧠 GUÍA PRÁCTICA DEL PARTO ✨✨✨
 
+### 🧠 Para reflexionar ✨✨✨
+
+- Cada parto lleva su propio tiempo, saber esperar y tener paciencia
+- Lo importante no es sólo la circunstancia del parto, sino cómo se vive y se experimenta
+- Intentar asumir positivamente las vivencias relacionadas con el nacimiento
+- El parto es fisiológico, pero pueden aparecer circunstancias que requieran ayuda farmacológica o intervención
+- Cualquier imprevisto que afecte al bienestar de la madre o del bebé puede obligar a desviarse del plan inicial
+- Intentar integrar y recordar los momentos positivos vividos durante el nacimiento
+- Mantener flexibilidad mental durante todo el proceso
+
 ### 1. 👶 Tipos de parto ✨✨✨
 
 - Parto normal
