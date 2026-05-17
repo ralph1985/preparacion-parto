@@ -8,9 +8,22 @@ const sections = document.querySelectorAll("section[id]");
 const header = document.getElementById("header");
 const courseNav = document.getElementById("course-nav");
 const lessonPanel = document.getElementById("lesson-panel");
+const courseSidebar = document.getElementById("course-sidebar");
+const courseDrawerToggle = document.getElementById("course-drawer-toggle");
+const courseDrawerClose = document.getElementById("course-drawer-close");
+const courseBackdrop = document.getElementById("course-backdrop");
 
 let course = null;
 let flatLessons = [];
+
+function setCourseDrawerOpen(isOpen) {
+  if (!courseSidebar || !courseDrawerToggle || !courseBackdrop) return;
+
+  courseSidebar.classList.toggle("is-open", isOpen);
+  courseDrawerToggle.setAttribute("aria-expanded", String(isOpen));
+  courseBackdrop.hidden = !isOpen;
+  document.body.classList.toggle("course-drawer-open", isOpen);
+}
 
 function setMenuOpen(isOpen) {
   if (!navMenu || !navToggle) return;
@@ -26,7 +39,10 @@ if (navToggle && navMenu) {
   });
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") setMenuOpen(false);
+    if (event.key === "Escape") {
+      setMenuOpen(false);
+      setCourseDrawerOpen(false);
+    }
   });
 
   document.addEventListener("click", (event) => {
@@ -40,6 +56,20 @@ if (navToggle && navMenu) {
 navLinks.forEach((link) => {
   link.addEventListener("click", () => setMenuOpen(false));
 });
+
+if (courseDrawerToggle && courseSidebar) {
+  courseDrawerToggle.addEventListener("click", () => {
+    setCourseDrawerOpen(!courseSidebar.classList.contains("is-open"));
+  });
+}
+
+if (courseDrawerClose) {
+  courseDrawerClose.addEventListener("click", () => setCourseDrawerOpen(false));
+}
+
+if (courseBackdrop) {
+  courseBackdrop.addEventListener("click", () => setCourseDrawerOpen(false));
+}
 
 function updateActiveSection() {
   const scrollY = window.scrollY;
@@ -194,6 +224,10 @@ function renderCourseNav(activeId) {
       `;
     })
     .join("");
+
+  courseNav.querySelectorAll(".course__lesson").forEach((link) => {
+    link.addEventListener("click", () => setCourseDrawerOpen(false));
+  });
 }
 
 async function loadLesson(id) {

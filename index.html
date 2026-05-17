@@ -111,8 +111,25 @@
             primeros cuidados en casa.
           </p>
 
+          <button
+            class="course__drawer-toggle"
+            id="course-drawer-toggle"
+            type="button"
+            aria-controls="course-sidebar"
+            aria-expanded="false"
+          >
+            Índice de lecciones
+          </button>
+
           <div class="course__layout">
-            <aside class="course__sidebar" aria-label="Índice del curso" data-aos="fade-up">
+            <div class="course__backdrop" id="course-backdrop" hidden></div>
+            <aside class="course__sidebar" id="course-sidebar" aria-label="Índice del curso">
+              <div class="course__drawer-header">
+                <p>Índice del curso</p>
+                <button class="course__drawer-close" id="course-drawer-close" type="button" aria-label="Cerrar índice">
+                  Cerrar
+                </button>
+              </div>
               <div class="course__intro">
                 <img
                   src="./assets/img/generated/modulos-preparacion-parto.png?v=20260515170000"
