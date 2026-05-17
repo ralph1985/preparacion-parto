@@ -20,55 +20,133 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 
 ## 🧠 GUÍA PRÁCTICA DEL PARTO ✨✨✨
 
-### 1. Tipos de parto
+### 1. 👶 Tipos de parto ✨✨✨
 
-- Normal: espontáneo, mínima intervención
-- Inducido: inicio médico
-- Instrumental: fórceps, espátulas, ventosa
-- Cesárea: cirugía
+- Parto normal
+- Parto inducido
+- Parto con fórceps
+- Parto con espátulas
+- Parto con ventosa (Kiwi)
+- Parto por cesárea
 
-### 2. Parto normal
+### 2. 🌿 Parto normal ✨✨✨
 
-- Inicio espontáneo
-- Madre empuja
-- Matrona acompaña
-- Sin episiotomía rutinaria
+- Comienzo espontáneo
+- Evolución fisiológica si bolsa íntegra y progreso correcto
+- La mujer puede utilizar técnicas para aliviar el dolor
+- La matrona acompaña y controla el proceso
+- Tactos vaginales: solo los imprescindibles
+- Respeto al proceso fisiológico
+- Parto vaginal espontáneo/sin intervenciones
+- La madre es parte activa junto a las contracciones
+- Gran esfuerzo físico (puede durar muchas horas)
+- No se realiza episiotomía de rutina
+- El parto puede realizarse en la misma habitación de dilatación
+- Intervención mínima si todo evoluciona correctamente
 
-### 3. Inducción
+### 3. 💉 Parto inducido ✨✨✨
 
-- Prostaglandinas
+#### Cuándo se realiza
+
+- Cuando es necesario acabar el embarazo
+- Indicaciones médicas o riesgos
+
+#### Métodos
+
+- Maduración del cuello uterino
+- Prostaglandinas:
+  - Misofar
+  - Propess
 - Balón de Cook
 - Oxitocina
 
-### 4. Posiciones
+#### Objetivo
 
-- Dilatación: movilidad libre
+- Iniciar o favorecer contracciones
+- Favorecer dilatación y evolución del parto
+
+### 4. 🧘 Posiciones durante la dilatación ✨✨✨
+
+- Movimiento libre
+- De pie
+- Pelota de pilates
+- Sentada
+- Acompañada
+- Apoyada en mesa/cama
+- Cuadrupedia
+- Bañera o agua caliente
 - Expulsivo: litotomía, lateral, cuadrupedia, cuclillas
 
-### 5. Instrumental
+#### Beneficios
 
-- Fórceps: tracción directa
-- Espátulas: ayuda suave
-- Ventosa: vacío
+- Aprovechar gravedad
+- Mayor movilidad
+- Mayor comodidad
+- Facilitar descenso del bebé
+- Ayuda al manejo del dolor
 
-### 6. Cesárea
+### 5. 🩺 Cómo puede finalizar el parto ✨✨✨
 
-- Cirugía
+#### Parto vaginal espontáneo
+
+- Lo realiza matrona o ginecólogo/a
+- Evolución espontánea/sin intervenciones
+- Madre activa durante expulsivo
+- Requiere esfuerzo físico importante
+- No episiotomía rutinaria
+- Puede realizarse en la misma habitación de dilatación
+
+#### Parto instrumental
+
+- Puede requerir:
+  - Espátulas
+  - Fórceps
+  - Ventosa
+
+#### Cesárea
+
+- Cirugía abdominal
+- Indicada si existe riesgo o dificultad
 - Anestesia epidural/raquídea
 - Recuperación más lenta
 
-### 7. Cordón
+### 6. 🥄 Parto con espátulas ✨✨✨
+
+- Instrumento metálico
+- Dos brazos con forma de cuchara
+- Actúan como calzador
+- Ayudan al descenso y tracción de la cabeza
+- Ejercen menos presión sobre la cabeza fetal
+- Puede aparecer sensación de presión intensa en la zona anal
+
+### 7. 🔧 Parto con fórceps ✨✨✨
+
+- Instrumento articulado
+- Dos cucharas metálicas
+- Sujetan la cabeza del bebé
+- Ayudan a acompañar salida por el canal del parto
+- Puede requerir episiotomía para facilitar extracción
+- Recomendable revisión del suelo pélvico tras el parto
+
+### 8. 🌀 Parto con ventosa (Kiwi) ✨✨✨
+
+- Dispositivo de vacío adherido a la cabeza fetal
+- Ayuda al descenso de la cabeza
+- Puede aparecer cefalohematoma temporal
+- El cefalohematoma suele desaparecer en 24–48h
+
+### 9. Cordón
 
 - Pinzamiento tardío
 - Más hierro
 
-### 8. Expulsivo
+### 10. Expulsivo
 
 - Cansancio
 - Náuseas
 - Emoción
 
-### 9. Clave
+### 11. Clave
 
 - Flexibilidad
 - Prioridad: madre y bebé
