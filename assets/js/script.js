@@ -47,7 +47,7 @@ const checklistSections = [
   {
     id: "bolsa-hospital",
     title: "Bolsa hospital",
-    lessonId: "plan-parto",
+    lessonId: "bolsa-hospital",
     items: [
       { id: "documentacion", text: "Preparar DNI, tarjeta sanitaria, historia del embarazo y documentacion familiar si aplica." },
       { id: "madre", text: "Preparar bolsa de la madre: ropa de salida, aseo, zapatillas, bragas, agua/snacks permitidos y apoyo para el dolor." },
@@ -82,7 +82,7 @@ const checklistSections = [
   {
     id: "postparto-casa",
     title: "Postparto en casa",
-    lessonId: "puerperio",
+    lessonId: "organizacion-casa",
     items: [
       { id: "comida", text: "Dejar compra inicial o comidas sencillas preparadas." },
       { id: "visitas", text: "Acordar limites de visitas y quien comunica esos limites." },
@@ -117,7 +117,7 @@ const checklistSections = [
   {
     id: "tramites-contactos",
     title: "Tramites y contactos",
-    lessonId: "puerperio",
+    lessonId: "tramites-postparto",
     items: [
       { id: "alta-bebe", text: "Revisar alta del bebe, tarjeta sanitaria, pediatra y beneficiario en Seguridad Social." },
       { id: "permisos", text: "Revisar permisos, prestaciones y posibles ayudas con sus plazos." },

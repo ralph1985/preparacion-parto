@@ -7,17 +7,30 @@ Contenido educativo privado/familiar. No sustituye el seguimiento de matrona, gi
 - 1. Prepararse antes del parto
   - Final del embarazo (final-embarazo)
   - Señales de parto y alarma (senales-parto)
-  - Plan de parto y bolsa (plan-parto)
+  - Plan de parto (plan-parto)
+  - Bolsa del hospital (bolsa-hospital)
+  - Logística antes de salir (logistica-hospital)
 - 2. El parto
   - Fases del parto (fases-parto)
+  - Tipos de parto (tipos-parto)
+  - Posturas y expulsivo (posturas-expulsivo)
   - Respiración, movimiento y dolor (alivio-dolor)
   - Intervenciones frecuentes (intervenciones)
 - 3. Primeras horas tras el nacimiento
   - Piel con piel y primeras revisiones (primeras-horas)
 - 4. Postparto
-  - Puerperio físico y emocional (puerperio)
+  - Recuperación física postparto (puerperio)
+  - Cesárea, puntos y alarmas (cuidados-puntos-cesarea)
+  - Organización en casa y visitas (organizacion-casa)
+  - Postparto emocional (postparto-emocional)
+  - Trámites tras el nacimiento (tramites-postparto)
 - 5. Lactancia y alimentación
   - Inicio de lactancia y alimentación (lactancia)
+  - Tomas, agarre y primeras semanas (tomas-agarre)
+  - Extracción y conservación (extraccion-conservacion)
+  - Fórmula y biberón (formula-biberon)
+  - Problemas frecuentes de lactancia (problemas-lactancia)
+  - Recursos y apoyo a la lactancia (recursos-lactancia)
 - 6. Cuidados del bebé
   - Cuidados básicos del recién nacido (cuidados-bebe)
 
@@ -93,11 +106,11 @@ Esta lección separa señales habituales de inicio de parto de situaciones en la
 Completar con las indicaciones concretas del hospital, matrona o equipo sanitario de referencia.
 
 <!-- lesson-id: plan-parto -->
-# Plan de parto y bolsa
+# Plan de parto
 
 El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato cerrado: debe poder adaptarse a la evolución clínica.
 
-## Plan de parto
+## Puntos a decidir
 
 - Acompañamiento.
 - Ambiente, movilidad y posturas.
@@ -180,7 +193,12 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
   - Piel con piel
   - Promoción de lactancia materna
 
-## Bolsa del hospital
+<!-- lesson-id: bolsa-hospital -->
+# Bolsa del hospital
+
+Preparar la bolsa con antelación reduce decisiones de última hora. Conviene adaptar la lista a las indicaciones del hospital.
+
+## Básicos
 
 - Documentación sanitaria.
 - Ropa cómoda para la madre.
@@ -213,44 +231,6 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 
 - Bolsa de aseo
 - Zapatillas cómodas
-
-### 👶 Bebé ✨✨✨
-
-- Ropa para el alta
-- Gorrito extra
-- Manta extra
-
-## 🧳 Preparativos hospital / bolsa ✨✨✨
-
-### 🧳 Recordatorios importantes ✨✨✨
-
-- Imprimir o tener accesible el PRAN / Plan de Parto
-- Llevar documentación preparada:
-  - DNI
-  - tarjeta sanitaria
-  - libro de familia / partida de matrimonio si aplica
-- Preparar playlist para el parto
-- Descargar música offline por si falla internet/cobertura
-- Revisar móviles, baterías y cargadores antes de salir
-
-### 🔋 Tecnología y preparación ✨✨✨
-
-- Cargar móviles
-- Preparar cascos
-- Llevar cargadores
-- Llevar powerbank
-
-### 🚗 Logística ✨✨✨
-
-- Dejar coche listo
-  - Gasolina
-  - Sillita instalada
-
-### 🍱 Comida hospital ✨✨✨
-
-- Preparar comida para el hospital
-- Tuppers
-- Snacks
 
 ### 🧳 Bolsa hospital ✨✨✨
 
@@ -293,6 +273,9 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 
 ### 👶 Bebé ✨✨✨
 
+- Ropa para el alta
+- Gorrito extra
+- Manta extra
 - Pañales
 - Toallitas
 - Muselinas
@@ -302,6 +285,41 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 - Gorrito
 - Gel y crema (Weleda)
 - Si lo envían a UCI: prever separación (ropa extra, contacto con personal)
+
+<!-- lesson-id: logistica-hospital -->
+# Logística antes de salir
+
+Esta lección agrupa preparativos prácticos que conviene dejar cerrados antes de que empiece el parto.
+
+## 🧳 Recordatorios importantes ✨✨✨
+
+- Imprimir o tener accesible el PRAN / Plan de Parto
+- Llevar documentación preparada:
+  - DNI
+  - tarjeta sanitaria
+  - libro de familia / partida de matrimonio si aplica
+- Preparar playlist para el parto
+- Descargar música offline por si falla internet/cobertura
+- Revisar móviles, baterías y cargadores antes de salir
+
+## 🔋 Tecnología y preparación ✨✨✨
+
+- Cargar móviles
+- Preparar cascos
+- Llevar cargadores
+- Llevar powerbank
+
+## 🚗 Logística ✨✨✨
+
+- Dejar coche listo
+  - Gasolina
+  - Sillita instalada
+
+## 🍱 Comida hospital ✨✨✨
+
+- Preparar comida para el hospital
+- Tuppers
+- Snacks
 
 # 2. El parto
 
@@ -326,9 +344,7 @@ Etapa de nacimiento del bebé. Conviene trabajar pujos, posturas, comunicación 
 
 Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vínculo temprano.
 
-## 🧠 GUÍA PRÁCTICA DEL PARTO ✨✨✨
-
-### 🧠 Para reflexionar ✨✨✨
+## 🧠 Para reflexionar ✨✨✨
 
 - Cada parto lleva su propio tiempo, saber esperar y tener paciencia
 - Lo importante no es sólo la circunstancia del parto, sino cómo se vive y se experimenta
@@ -338,7 +354,22 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Intentar integrar y recordar los momentos positivos vividos durante el nacimiento
 - Mantener flexibilidad mental durante todo el proceso
 
-### 1. 👶 Tipos de parto ✨✨✨
+## Cordón
+
+- Pinzamiento tardío
+- Suele recomendarse no antes de 1 minuto si madre y bebé están bien, por beneficios como mejor reserva de hierro del bebé.
+
+## Clave
+
+- Flexibilidad
+- Prioridad: madre y bebé
+
+<!-- lesson-id: tipos-parto -->
+# Tipos de parto
+
+Conocer los posibles escenarios ayuda a entender el lenguaje del equipo sanitario y a mantener flexibilidad si el plan cambia.
+
+## 👶 Tipos de parto ✨✨✨
 
 - Parto normal
 - Parto inducido
@@ -347,7 +378,7 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Parto con ventosa (Kiwi)
 - Parto por cesárea
 
-### 2. 🌿 Parto normal ✨✨✨
+## 🌿 Parto normal ✨✨✨
 
 - Comienzo espontáneo
 - Evolución fisiológica si bolsa íntegra y progreso correcto
@@ -362,14 +393,14 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - El parto puede realizarse en la misma habitación de dilatación
 - Intervención mínima si todo evoluciona correctamente
 
-### 3. 💉 Parto inducido ✨✨✨
+## 💉 Parto inducido ✨✨✨
 
-#### Cuándo se realiza
+### Cuándo se realiza
 
 - Cuando es necesario acabar el embarazo
 - Indicaciones médicas o riesgos
 
-#### Métodos
+### Métodos
 
 - Maduración del cuello uterino
 - Prostaglandinas:
@@ -378,12 +409,17 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Balón de Cook
 - Oxitocina
 
-#### Objetivo
+### Objetivo
 
 - Iniciar o favorecer contracciones
 - Favorecer dilatación y evolución del parto
 
-### 4. 🧘 Posiciones durante la dilatación ✨✨✨
+<!-- lesson-id: posturas-expulsivo -->
+# Posturas y expulsivo
+
+Las posturas pueden cambiar según el momento, la analgesia, la movilidad disponible y la situación clínica.
+
+## 🧘 Posiciones durante la dilatación ✨✨✨
 
 - Movimiento libre
 - De pie
@@ -395,7 +431,7 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Bañera o agua caliente
 - Expulsivo: litotomía, lateral, cuadrupedia, cuclillas
 
-#### Beneficios
+### Beneficios
 
 - Aprovechar gravedad
 - Mayor movilidad
@@ -403,9 +439,9 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Facilitar descenso del bebé
 - Ayuda al manejo del dolor
 
-### 5. 🤰 Posiciones durante el expulsivo ✨✨✨
+## 🤰 Posiciones durante el expulsivo ✨✨✨
 
-#### 🧎 Posición en cuclillas ✨✨✨
+### 🧎 Posición en cuclillas ✨✨✨
 
 - Aprovecha la gravedad
 - Abre más espacio en la pelvis
@@ -417,7 +453,7 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Más difícil de mantener durante mucho tiempo
 - Menor manipulación por parte de profesionales
 
-#### 🛏️ Posición clásica o litotomía ✨✨✨
+### 🛏️ Posición clásica o litotomía ✨✨✨
 
 - Favorece acceso y trabajo del profesional
 - Mayor vigilancia/control fetal
@@ -429,7 +465,7 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
   - Riesgo de lesiones/desgarros
 - Menor ayuda de la gravedad
 
-#### ↔️ Posición decúbito lateral ✨✨✨
+### ↔️ Posición decúbito lateral ✨✨✨
 
 - Postura cómoda y más descansada
 - Compatible con epidural
@@ -439,7 +475,7 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Contracciones más largas y efectivas
 - Menor sensación dolorosa
 
-#### 🐾 Posición cuadrupedia ✨✨✨
+### 🐾 Posición cuadrupedia ✨✨✨
 
 - Ángulo óptimo para entrada del bebé en pelvis
 - Reduce presión sobre grandes vasos
@@ -450,101 +486,11 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Reduce presión sobre zona anal
 - Menor riesgo de lesiones/desgarros
 
-### 6. 🩺 Cómo puede finalizar el parto ✨✨✨
-
-#### Parto vaginal espontáneo
-
-- Lo realiza matrona o ginecólogo/a
-- Evolución espontánea/sin intervenciones
-- Madre activa durante expulsivo
-- Requiere esfuerzo físico importante
-- No episiotomía rutinaria
-- Puede realizarse en la misma habitación de dilatación
-
-#### Parto instrumental
-
-- Puede requerir:
-  - Espátulas
-  - Fórceps
-  - Ventosa
-
-#### 🏥 Cesárea ✨✨✨
-
-- Cirugía abdominal para extracción del bebé
-- Indicada si existe riesgo o dificultad
-- Tiene más riesgos para la madre que un parto vaginal
-
-##### Procedimiento
-
-- Incisión sobre el pubis
-- Anestesia:
-  - Epidural o raquianestesia
-- Se realiza en quirófano
-
-##### Personal habitual presente
-
-- Ginecología
-- Anestesia
-- Pediatría
-- Enfermería
-- Matrona
-
-##### Acompañamiento
-
-- El padre/acompañante puede acompañar si no existe contraindicación
-
-##### Piel con piel
-
-- Si es posible, se realiza piel con piel tras el nacimiento
-
-##### Postoperatorio
-
-- Tras la cesárea:
-  - Vigilancia aproximada durante 2 horas
-  - Control en zona de reanimación/dilatación
-- Recuperación más lenta que parto vaginal
-- Dolor postoperatorio controlado con medicación
-
-### 7. 🥄 Parto con espátulas ✨✨✨
-
-- Instrumento metálico
-- Dos brazos con forma de cuchara
-- Actúan como calzador
-- Ayudan al descenso y tracción de la cabeza
-- Ejercen menos presión sobre la cabeza fetal
-- Puede aparecer sensación de presión intensa en la zona anal
-
-### 8. 🔧 Parto con fórceps ✨✨✨
-
-- Instrumento articulado
-- Dos cucharas metálicas
-- Sujetan la cabeza del bebé
-- Ayudan a acompañar salida por el canal del parto
-- Puede requerir episiotomía para facilitar extracción
-- Recomendable revisión del suelo pélvico tras el parto
-
-### 9. 🌀 Parto con ventosa (Kiwi) ✨✨✨
-
-- Dispositivo de vacío adherido a la cabeza fetal
-- Ayuda al descenso de la cabeza
-- Puede aparecer cefalohematoma temporal
-- El bulto o marca superficial puede mejorar en días, pero un cefalohematoma real puede tardar semanas en reabsorberse. Confirmar siempre con pediatría.
-
-### 10. Cordón
-
-- Pinzamiento tardío
-- Suele recomendarse no antes de 1 minuto si madre y bebé están bien, por beneficios como mejor reserva de hierro del bebé.
-
-### 11. Expulsivo
+## Expulsivo
 
 - Cansancio
 - Náuseas
 - Emoción
-
-### 12. Clave
-
-- Flexibilidad
-- Prioridad: madre y bebé
 
 <!-- lesson-id: alivio-dolor -->
 # Respiración, movimiento y alivio del dolor
@@ -577,22 +523,91 @@ Observar, ofrecer agua, ayudar con posturas, proteger el ambiente y comunicar ne
 <!-- lesson-id: intervenciones -->
 # Intervenciones frecuentes
 
-Esta lección debe explicar intervenciones habituales con lenguaje claro, indicando motivo, beneficio, riesgos y alternativas cuando existan.
+Estas situaciones dependen de la evolución clínica y del protocolo del centro. Conviene entenderlas como posibilidades, no como un guion fijo.
 
-## Temas a desarrollar
+## 🩺 Cómo puede finalizar el parto ✨✨✨
 
-- Monitorización fetal.
-- Tactos vaginales.
-- Inducción del parto.
-- Oxitocina.
-- Amniorrexis.
-- Episiotomía.
-- Parto instrumental.
-- Cesárea.
+### Parto vaginal espontáneo
+
+- Lo realiza matrona o ginecólogo/a
+- Evolución espontánea/sin intervenciones
+- Madre activa durante expulsivo
+- Requiere esfuerzo físico importante
+- No episiotomía rutinaria
+- Puede realizarse en la misma habitación de dilatación
+
+### Parto instrumental
+
+- Puede requerir:
+  - Espátulas
+  - Fórceps
+  - Ventosa
+
+## 🏥 Cesárea ✨✨✨
+
+- Cirugía abdominal para extracción del bebé
+- Indicada si existe riesgo o dificultad
+- Tiene más riesgos para la madre que un parto vaginal
+
+### Procedimiento
+
+- Incisión sobre el pubis
+- Anestesia:
+  - Epidural o raquianestesia
+- Se realiza en quirófano
+
+### Personal habitual presente
+
+- Ginecología
+- Anestesia
+- Pediatría
+- Enfermería
+- Matrona
+
+### Acompañamiento
+
+- El padre/acompañante puede acompañar si no existe contraindicación
+
+### Piel con piel
+
+- Si es posible, se realiza piel con piel tras el nacimiento
+
+### Postoperatorio
+
+- Tras la cesárea:
+  - Vigilancia aproximada durante 2 horas
+  - Control en zona de reanimación/dilatación
+- Recuperación más lenta que parto vaginal
+- Dolor postoperatorio controlado con medicación
+
+## 🥄 Parto con espátulas ✨✨✨
+
+- Instrumento metálico
+- Dos brazos con forma de cuchara
+- Actúan como calzador
+- Ayudan al descenso y tracción de la cabeza
+- Ejercen menos presión sobre la cabeza fetal
+- Puede aparecer sensación de presión intensa en la zona anal
+
+## 🔧 Parto con fórceps ✨✨✨
+
+- Instrumento articulado
+- Dos cucharas metálicas
+- Sujetan la cabeza del bebé
+- Ayudan a acompañar salida por el canal del parto
+- Puede requerir episiotomía para facilitar extracción
+- Recomendable revisión del suelo pélvico tras el parto
+
+## 🌀 Parto con ventosa (Kiwi) ✨✨✨
+
+- Dispositivo de vacío adherido a la cabeza fetal
+- Ayuda al descenso de la cabeza
+- Puede aparecer cefalohematoma temporal
+- El bulto o marca superficial puede mejorar en días, pero un cefalohematoma real puede tardar semanas en reabsorberse. Confirmar siempre con pediatría.
 
 ## Enfoque
 
-La clave es que la familia entienda qué se propone, por qué se propone y qué preguntas puede hacer antes de decidir.
+Preguntar siempre el motivo, beneficios, riesgos, alternativas y urgencia de cada intervención cuando el contexto lo permita.
 
 # 3. Primeras horas tras el nacimiento
 
@@ -617,11 +632,9 @@ Completar con protocolos reales del centro de referencia para evitar prometer pr
 # 4. Postparto
 
 <!-- lesson-id: puerperio -->
-# Puerperio físico y emocional
+# Recuperación física postparto
 
-El postparto necesita información práctica y expectativas realistas.
-
-# 🤱 Postparto y recuperación ✨✨✨
+El postparto necesita información práctica y expectativas realistas. Cada recuperación tiene su ritmo y debe valorarse con matrona o ginecología cuando haya dudas.
 
 ## Recuperación física
 
@@ -654,9 +667,99 @@ El postparto necesita información práctica y expectativas realistas.
 - Nota:
   - la recuperación puede ser muy distinta según el tipo de parto y cada persona
 
-# 🗂️ Plan postparto y organización familiar ✨✨✨
+## 🥩 Alimentación y recuperación ✨✨✨
 
-## 📋 Elaboración del plan postparto ✨✨✨
+- Importancia de buena hidratación
+- Priorizar descanso dentro de lo posible
+- Alimentación rica en proteína para favorecer recuperación
+- No convertirlo en dieta estricta
+- Si hay lactancia, consultar recomendaciones actualizadas sobre alcohol y tiempos de seguridad.
+
+## 💊 Analgesia y dolor ✨✨✨
+
+- El dolor en postparto debe tratarse adecuadamente
+- Comentaron ibuprofeno 400 mg como analgesia frecuente en muchos casos
+- Seguir siempre indicación médica y compatibilidad en lactancia
+- No usar dosis como recomendación universal
+
+## 🩸 Primera menstruación tras el parto ✨✨✨
+
+- La primera regla puede ser distinta
+- Puede haber más sangrado
+- Flujo más espeso
+- Color rojo vivo
+- Posibilidad de coágulos
+- Los ciclos pueden tardar en regularizarse
+- Con lactancia exclusiva la menstruación puede tardar meses en volver
+- Comentaron aproximadamente entre 3 y 18 meses, aunque es muy variable
+- Puede reaparecer desde unas semanas tras el parto incluso dando lactancia
+
+<!-- lesson-id: cuidados-puntos-cesarea -->
+# Cesárea, puntos y señales de alarma
+
+Los cuidados de heridas, puntos y signos de alarma deben adaptarse a la evolución y a las indicaciones del centro.
+
+## 🩹 Lesión perineal y puntos ✨✨✨
+
+### Cuidados de lesión perineal
+
+- Lavar con agua tibia y jabón suave
+- Máximo dos veces al día
+- Mantener zona seca
+- Cambiar compresas frecuentemente
+- Buscar ratos con la zona al aire
+- Usar ropa cómoda y transpirable
+- Evitar flotadores/cojines tipo donut
+- Puntos suelen caerse solos alrededor de 10-15 días
+- Analgesia si es necesaria
+- Buena hidratación y alimentación ayudan a recuperación
+
+## 🩺 Cuidados de cesárea ✨✨✨
+
+- Retirar apósito según indicación médica (comentaron alrededor de 5 días)
+- Lavar con agua y jabón neutro
+- Secar con pequeños toques
+- Dejar secar al aire
+- Evitar ropa que presione
+- Puede haber tirantez y picor durante recuperación
+- Primeros días puede doler bastante
+- Analgesia pautada puede ser necesaria
+- Alrededor de 12-14 días comentaron masaje suave con rosa mosqueta si la herida evoluciona bien
+- Seguir siempre recomendación médica individual
+
+## Vigilar signos de alarma de heridas
+
+- Mal olor
+- Pus o supuración
+- Sangrado importante
+- Enrojecimiento intenso
+- Calor local
+- Fiebre
+
+## 🚨 Cuándo consultar o acudir a urgencias ✨✨✨
+
+- Fiebre >38ºC
+- Sangrado abundante importante
+- Loquios con mal olor o aspecto purulento
+- Dolor intenso al orinar
+- Dolor abdominal fuerte
+- Dolor o hinchazón llamativa en piernas
+- Tristeza profunda persistente
+- Sensación de no poder cuidar al bebé
+- Ideas de hacerse daño o de hacer daño al bebé
+- Dolor intenso en pecho
+- Enrojecimiento mamario importante
+- Falta de aire, dolor torácico, desmayo o confusión
+- Pedir ayuda pronto suele evitar complicaciones
+
+<!-- lesson-id: organizacion-casa -->
+# Organización en casa y visitas
+
+Preparar algunas decisiones antes del parto puede reducir estrés posterior. No se trata de tener todo perfecto, sino de facilitar los primeros días.
+
+## 🗂️ Plan postparto y organización familiar ✨✨✨
+
+### 📋 Elaboración del plan postparto ✨✨✨
 
 - ¿Qué vamos a comer los primeros días?
 - ¿Quién se encargará de tareas domésticas?
@@ -678,7 +781,7 @@ El postparto necesita información práctica y expectativas realistas.
 - Organizar zona de descanso y lactancia
 - No se trata de tener todo perfecto, sino de facilitar los primeros días
 
-# 🤝 Estrategias para sobrellevar el postparto ✨✨✨
+## 🤝 Estrategias para sobrellevar el postparto ✨✨✨
 
 - Comunicación abierta en la pareja
 - Expresar preocupaciones, miedos y emociones
@@ -692,73 +795,97 @@ El postparto necesita información práctica y expectativas realistas.
 - Limitar o posponer visitas si generan estrés
 - El descanso y la salud mental también forman parte del cuidado del bebé
 
-## 🥩 Alimentación y recuperación ✨✨✨
+## Organización en casa
 
-- Importancia de buena hidratación
-- Priorizar descanso dentro de lo posible
-- Alimentación rica en proteína para favorecer recuperación
-- No convertirlo en dieta estricta
-- Si hay lactancia, consultar recomendaciones actualizadas sobre alcohol y tiempos de seguridad.
+Reparto de tareas, visitas, descanso, alimentación y límites.
 
-## 💊 Analgesia y dolor ✨✨✨
+<!-- lesson-id: postparto-emocional -->
+# Postparto emocional
 
-- El dolor en postparto debe tratarse adecuadamente
-- Comentaron ibuprofeno 400 mg como analgesia frecuente en muchos casos
-- Seguir siempre indicación médica y compatibilidad en lactancia
-- No usar dosis como recomendación universal
+El postparto puede ser emocionalmente intenso. Pedir ayuda pronto es parte del cuidado de la madre, del bebé y de la familia.
 
-# 🩹 Lesión perineal y puntos ✨✨✨
+## 🧠 Adaptación emocional tras el parto ✨✨✨
 
-## Cuidados de lesión perineal
+- Cambios hormonales.
+- Llanto, irritabilidad y vulnerabilidad.
+- Necesidad de apoyo.
+- Señales de alarma en salud mental.
+- Ambivalencia emocional
+- Inseguridad
+- Cansancio extremo
+- Adaptación al nuevo rol
+- Presión de consejos externos
+- Dificultades iniciales con lactancia
+- Exceso de visitas puede saturar
+- No todas las madres viven el postparto igual
 
-- Lavar con agua tibia y jabón suave
-- Máximo dos veces al día
-- Mantener zona seca
-- Cambiar compresas frecuentemente
-- Buscar ratos con la zona al aire
-- Usar ropa cómoda y transpirable
-- Evitar flotadores/cojines tipo donut
-- Puntos suelen caerse solos alrededor de 10-15 días
-- Analgesia si es necesaria
-- Buena hidratación y alimentación ayudan a recuperación
+## 🌊 Etapas emocionales ✨✨✨
 
-# 🩺 Cuidados de cesárea ✨✨✨
+### Etapa de aceptación
 
-- Retirar apósito según indicación médica (comentaron alrededor de 5 días)
-- Lavar con agua y jabón neutro
-- Secar con pequeños toques
-- Dejar secar al aire
-- Evitar ropa que presione
-- Puede haber tirantez y picor durante recuperación
-- Primeros días puede doler bastante
-- Analgesia pautada puede ser necesaria
-- Alrededor de 12-14 días comentaron masaje suave con rosa mosqueta si la herida evoluciona bien
-- Seguir siempre recomendación médica individual
+- agotamiento
+- dudas
+- dependencia alta
 
-## Vigilar signos de alarma
+### Etapa de transición
 
-- Mal olor
-- Pus o supuración
-- Sangrado importante
-- Enrojecimiento intenso
-- Calor local
-- Fiebre
+- mayor autonomía
+- empieza a tomar decisiones
+- asume responsabilidades
+- busca validación
 
-# 🩸 Primera menstruación tras el parto ✨✨✨
+### Etapa de adaptación
 
-- La primera regla puede ser distinta
-- Puede haber más sangrado
-- Flujo más espeso
-- Color rojo vivo
-- Posibilidad de coágulos
-- Los ciclos pueden tardar en regularizarse
-- Con lactancia exclusiva la menstruación puede tardar meses en volver
-- Comentaron aproximadamente entre 3 y 18 meses, aunque es muy variable
-- Puede reaparecer desde unas semanas tras el parto incluso dando lactancia
+- más seguridad
+- integración del nuevo rol
+- sensación progresiva de control
 
-# 🗃️ Trámites administrativos tras el parto ✨✨✨
+### Nota
 
-## Posibles trámites
+- no siempre ocurren de forma lineal
+
+## ❤️ Compartir emociones y apoyo ✨✨✨
+
+- Escuchar sin juzgar
+- Mostrar empatía
+- Crear entorno de confianza
+- Limitar y organizar visitas si hace falta
+- Favorecer descanso de la madre
+- Priorizar rutinas sencillas
+- Animar a salir a pasear cuando se encuentre mejor
+- El acompañamiento emocional es tan importante como el físico
+
+## 🤍 Recordatorio importante ✨✨✨
+
+- El cansancio extremo es normal
+- Pedir ayuda es importante
+- Priorizar descanso, hidratación y comida
+- El acompañamiento emocional importa mucho
+- No obsesionarse con hacerlo “perfecto”
+- El postparto puede ser duro aunque el bebé sea deseado
+- Pedir ayuda no significa hacerlo mal
+- Descansar también es cuidar al bebé
+- Cada recuperación tiene su ritmo
+
+## 🌤️ Hay luz al final del túnel ✨✨✨
+
+- Los primeros días pueden sentirse caóticos
+- Dormir poco altera mucho las emociones
+- Poco a poco aparecen rutinas
+- La sensación de control suele mejorar con el tiempo
+- No exigirse perfección
+- Paciencia y cariño con uno mismo y con la pareja
+
+Poco a poco vuestra familia irá encontrando su propia manera de funcionar.
+
+<!-- lesson-id: tramites-postparto -->
+# Trámites tras el nacimiento
+
+Conviene revisar plazos y requisitos oficiales, porque algunos trámites pueden depender de la comunidad autónoma, el hospital o la situación laboral.
+
+## 🗃️ Trámites administrativos tras el parto ✨✨✨
+
+### Posibles trámites
 
 - Alta del bebé
 - Tarjeta sanitaria
@@ -785,107 +912,11 @@ El postparto necesita información práctica y expectativas realistas.
 - Tarjeta sanitaria:
   - https://www.comunidad.madrid/salud/he-tenido-hijo
 
-# ⏳ “El postparto dura 40 días” ✨✨✨
+## ⏳ “El postparto dura 40 días” ✨✨✨
 
 - Tradicionalmente se habla de “cuarentena” o unos 40 días iniciales de recuperación
 - La adaptación física y emocional puede durar bastante más
 - Cada familia necesita tiempos diferentes
-
-# 🚨 Cuándo consultar o acudir a urgencias ✨✨✨
-
-- Fiebre >38ºC
-- Sangrado abundante importante
-- Loquios con mal olor o aspecto purulento
-- Dolor intenso al orinar
-- Dolor abdominal fuerte
-- Dolor o hinchazón llamativa en piernas
-- Tristeza profunda persistente
-- Sensación de no poder cuidar al bebé
-- Ideas de hacerse daño o de hacer daño al bebé
-- Dolor intenso en pecho
-- Enrojecimiento mamario importante
-- Falta de aire, dolor torácico, desmayo o confusión
-- Pedir ayuda pronto suele evitar complicaciones
-
-# 🧠 Adaptación emocional tras el parto ✨✨✨
-
-El postparto puede ser emocionalmente intenso.
-
-- Cambios hormonales.
-- Llanto, irritabilidad y vulnerabilidad.
-- Necesidad de apoyo.
-- Señales de alarma en salud mental.
-- Ambivalencia emocional
-- Inseguridad
-- Cansancio extremo
-- Adaptación al nuevo rol
-- Presión de consejos externos
-- Dificultades iniciales con lactancia
-- Exceso de visitas puede saturar
-- No todas las madres viven el postparto igual
-
-# 🌊 Etapas emocionales ✨✨✨
-
-## Etapa de aceptación
-
-- agotamiento
-- dudas
-- dependencia alta
-
-## Etapa de transición
-
-- mayor autonomía
-- empieza a tomar decisiones
-- asume responsabilidades
-- busca validación
-
-## Etapa de adaptación
-
-- más seguridad
-- integración del nuevo rol
-- sensación progresiva de control
-
-## Nota
-
-- no siempre ocurren de forma lineal
-
-# ❤️ Compartir emociones y apoyo ✨✨✨
-
-- Escuchar sin juzgar
-- Mostrar empatía
-- Crear entorno de confianza
-- Limitar y organizar visitas si hace falta
-- Favorecer descanso de la madre
-- Priorizar rutinas sencillas
-- Animar a salir a pasear cuando se encuentre mejor
-- El acompañamiento emocional es tan importante como el físico
-
-## Organización en casa
-
-Reparto de tareas, visitas, descanso, alimentación y límites.
-
-# 🤍 Recordatorio importante ✨✨✨
-
-- El cansancio extremo es normal
-- Pedir ayuda es importante
-- Priorizar descanso, hidratación y comida
-- El acompañamiento emocional importa mucho
-- No obsesionarse con hacerlo “perfecto”
-- El postparto puede ser duro aunque el bebé sea deseado
-- Pedir ayuda no significa hacerlo mal
-- Descansar también es cuidar al bebé
-- Cada recuperación tiene su ritmo
-
-# 🌤️ Hay luz al final del túnel ✨✨✨
-
-- Los primeros días pueden sentirse caóticos
-- Dormir poco altera mucho las emociones
-- Poco a poco aparecen rutinas
-- La sensación de control suele mejorar con el tiempo
-- No exigirse perfección
-- Paciencia y cariño con uno mismo y con la pareja
-
-> “Poco a poco vuestra familia irá encontrando su propia manera de funcionar.”
 
 # 5. Lactancia y alimentación
 
@@ -894,17 +925,17 @@ Reparto de tareas, visitas, descanso, alimentación y límites.
 
 La lactancia se aprende. Conviene explicar fisiología básica, práctica y señales para pedir ayuda.
 
-# 🍼 Lactancia y alimentación ✨✨✨
+## 🍼 Lactancia y alimentación ✨✨✨
 
-# 🤱 Lactancia materna ✨✨✨
+## 🤱 Lactancia materna ✨✨✨
 
-## 🌟 ¿Por qué dar el pecho? ✨✨✨
+### 🌟 ¿Por qué dar el pecho? ✨✨✨
 
 - Cada familia y cada lactancia son diferentes
 - Evitar vivir la alimentación desde la culpa
 - La lactancia materna puede aportar beneficios, pero necesita apoyo, información y adaptación a cada caso
 
-## Beneficios para el bebé
+### Beneficios para el bebé
 
 - nutricionales
 - inmunológicos
@@ -912,12 +943,52 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 - vínculo afectivo
 - recomendación de lactancia exclusiva aproximadamente 6 meses
 
-## Beneficios para la madre
+### Beneficios para la madre
 
 - vínculo emocional
 - comodidad
 - económicos
 - beneficios biológicos y hormonales
+
+## 🟡 Calostro ✨✨✨
+
+- Primeras gotas/leche tras el parto
+- Pequeñas cantidades: aprox 2–20 ml por toma
+- Muy concentrado nutricionalmente
+- Rico en anticuerpos (IgA)
+- Contiene oligosacáridos, lactoferrina y factores de crecimiento
+- Ayuda a colonizar la flora intestinal
+- Efecto laxante para expulsar meconio
+- Aunque parezca poca cantidad, suele ser suficiente los primeros días
+
+## 🧸 Inicio de la lactancia tras el nacimiento ✨✨✨
+
+- Se recomendó favorecer contacto piel con piel e inicio precoz de lactancia tras el nacimiento si madre y bebé están bien
+- A veces hay circunstancias médicas que modifican el inicio
+
+## 📚 Recomendaciones generales ✨✨✨
+
+- OMS recomienda:
+  - lactancia materna exclusiva unos 6 meses
+  - posteriormente complementarla con otros alimentos si se desea continuar
+- La duración final de la lactancia depende de cada familia
+
+## ❤️ Recordatorio importante ✨✨✨
+
+- Alimentar también es vínculo
+- La lactancia no debería vivirse desde la culpa
+- Pedir ayuda pronto suele evitar muchos problemas
+- Las primeras semanas suelen ser intensas y caóticas
+- El descanso y el apoyo importan muchísimo
+
+## Idea clave
+
+El objetivo es que el bebé coma y que la madre reciba apoyo, sin culpa y con información fiable.
+
+<!-- lesson-id: tomas-agarre -->
+# Tomas, agarre y primeras semanas
+
+Las primeras semanas suelen ser intensas y requieren observación, apoyo y adaptación.
 
 ## 🤱 Primeras semanas ✨✨✨
 
@@ -929,21 +1000,21 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 - Recordatorio:
   - la lactancia suele requerir aprendizaje tanto del bebé como de la madre
 
-# 🧸 Lactancia y primeros hábitos ✨✨✨
+## 🧸 Lactancia y primeros hábitos ✨✨✨
 
-## Chupete y lactancia
+### Chupete y lactancia
 
 - Comentaron evitar chupete durante las primeras semanas si se está estableciendo lactancia materna
 - Referencia aproximada: 4–6 semanas
 - Puede variar según cada bebé y situación
 
-## Agua en bebés
+### Agua en bebés
 
 - Los recién nacidos no deben beber agua
 - La hidratación la cubre la leche materna o fórmula
 - Consultar siempre con pediatría antes de ofrecer agua en bebés pequeños
 
-## Puntos básicos
+### Puntos básicos
 
 - Calostro: primera leche, alta en defensas
 - Pedir colector de calostro
@@ -954,33 +1025,22 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 - Tomas frecuentes.
 - Dolor, grietas, ingurgitación y mastitis.
 
-# 🟡 Calostro ✨✨✨
-
-- Primeras gotas/leche tras el parto
-- Pequeñas cantidades: aprox 2–20 ml por toma
-- Muy concentrado nutricionalmente
-- Rico en anticuerpos (IgA)
-- Contiene oligosacáridos, lactoferrina y factores de crecimiento
-- Ayuda a colonizar la flora intestinal
-- Efecto laxante para expulsar meconio
-- Aunque parezca poca cantidad, suele ser suficiente los primeros días
-
-# 🍼 Frecuencia de tomas ✨✨✨
+## 🍼 Frecuencia de tomas ✨✨✨
 
 - Los recién nacidos suelen pedir muchas tomas
 - Puede haber entre 10 y 12 tomas al día
 - Especialmente frecuente durante las primeras semanas
 - La lactancia suele funcionar “a demanda”
 
-# ⏰ No dejar demasiadas horas sin comer ✨✨✨
+## ⏰ No dejar demasiadas horas sin comer ✨✨✨
 
 - Comentaron intentar que el recién nacido no pase más de unas 4 horas seguidas sin alimentarse en los primeros días
 - Las recomendaciones pueden variar según peso, edad y situación médica
 - Seguir indicaciones de pediatría o matrona
 
-# 🚫 Mitos y realidades sobre lactancia ✨✨✨
+## 🚫 Mitos y realidades sobre lactancia ✨✨✨
 
-## Mitos comentados en el taller
+### Mitos comentados en el taller
 
 - “Tengo poca leche”
 - “Si te asustas se corta la leche”
@@ -988,22 +1048,15 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 - “Hay alimentos que siempre dan mal sabor a la leche”
 - “Hay que beber muchísima leche o agua para producir leche”
 
-## Idea principal
+### Idea principal
 
 - Una alimentación equilibrada suele ser suficiente
 - El estrés puede afectar al bienestar, pero no “corta” automáticamente la leche
 
-# 🧸 Inicio de la lactancia tras el nacimiento ✨✨✨
+<!-- lesson-id: extraccion-conservacion -->
+# Extracción y conservación de leche
 
-- Se recomendó favorecer contacto piel con piel e inicio precoz de lactancia tras el nacimiento si madre y bebé están bien
-- A veces hay circunstancias médicas que modifican el inicio
-
-# 📚 Recomendaciones generales ✨✨✨
-
-- OMS recomienda:
-  - lactancia materna exclusiva unos 6 meses
-  - posteriormente complementarla con otros alimentos si se desea continuar
-- La duración final de la lactancia depende de cada familia
+Los tiempos de conservación son aproximados y pueden variar según higiene, temperatura real y protocolo del centro.
 
 ## ✋ Extracción manual de leche ✨✨✨
 
@@ -1016,38 +1069,6 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 - Ir rotando posiciones
 - Recurso:
   - https://www.youtube.com/watch?v=m3t8vOS--Qs
-
-## 🍼 Cuándo no se puede dar lactancia materna ✨✨✨
-
-- Favorecer igualmente el vínculo madre-hijo/a
-- Mantener contacto piel con piel
-- Alimentar mirando al bebé y cara a cara
-- Estimulación sensorial y afectiva
-
-### Si hay suplementación
-
-- Intentar ofrecer desde distintos lados
-- Alternar brazos
-
-### Preparación orientativa de fórmula
-
-- 30cc agua = 1 cacito raso
-- Agua alrededor de 70ºC
-- Dato sensible y variable:
-  - seguir siempre las instrucciones del envase y las indicaciones de pediatría/matrona
-  - preparar con higiene estricta, enfriar antes de ofrecer y desechar restos según la guía usada por el centro
-
-## 🧠 Método Kassing ✨✨✨
-
-- Técnica para dar biberón intentando minimizar interferencias con la lactancia
-- Busca imitar el ritmo de la lactancia materna
-- Bebé más vertical
-- Biberón horizontal, no inclinado completamente
-- Activar reflejo de búsqueda y succión
-- Hacer pausas frecuentes
-- Pausa aproximadamente cada 20 succiones
-- Introducir bien la tetina
-- Alternar lados
 
 ## 🍼 Conservación de la leche materna ✨✨✨
 
@@ -1077,11 +1098,57 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 - calentada o a temperatura ambiente → usar en unas 2h
 - NO volver a congelar
 
+<!-- lesson-id: formula-biberon -->
+# Fórmula y biberón
+
+Si no se puede o no se desea lactancia materna exclusiva, alimentar también puede ser vínculo. Conviene seguir indicaciones de pediatría, matrona y envase.
+
+## 🍼 Cuándo no se puede dar lactancia materna ✨✨✨
+
+- Favorecer igualmente el vínculo madre-hijo/a
+- Mantener contacto piel con piel
+- Alimentar mirando al bebé y cara a cara
+- Estimulación sensorial y afectiva
+
+## Si hay suplementación
+
+- Intentar ofrecer desde distintos lados
+- Alternar brazos
+
+## Preparación orientativa de fórmula
+
+- 30cc agua = 1 cacito raso
+- Agua alrededor de 70ºC
+- Dato sensible y variable:
+  - seguir siempre las instrucciones del envase y las indicaciones de pediatría/matrona
+  - preparar con higiene estricta, enfriar antes de ofrecer y desechar restos según la guía usada por el centro
+
+## 🧠 Método Kassing ✨✨✨
+
+- Técnica para dar biberón intentando minimizar interferencias con la lactancia
+- Busca imitar el ritmo de la lactancia materna
+- Bebé más vertical
+- Biberón horizontal, no inclinado completamente
+- Activar reflejo de búsqueda y succión
+- Hacer pausas frecuentes
+- Pausa aproximadamente cada 20 succiones
+- Introducir bien la tetina
+- Alternar lados
+
 ## 🍼 Biberones recomendados ✨✨✨
 
 - Comentaron como recomendables los biberones MAM
 - Especialmente por su flujo y aceptación en lactancia mixta
 - No implica que sean “los mejores”
+
+## Otras opciones de alimentación
+
+Añadir información respetuosa sobre extracción, conservación, lactancia mixta o alimentación con fórmula cuando sea necesario.
+
+<!-- lesson-id: problemas-lactancia -->
+# Problemas frecuentes de lactancia
+
+Muchas dificultades tienen solución con acompañamiento adecuado. Si hay fiebre, dolor intenso, empeoramiento o dudas con la alimentación del bebé, consultar pronto.
 
 ## ⚠️ Dificultades durante la lactancia ✨✨✨
 
@@ -1167,6 +1234,11 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
    - consultar matrona
    - posible apertura estéril profesional
 
+<!-- lesson-id: recursos-lactancia -->
+# Recursos y apoyo a la lactancia
+
+Tener recursos localizados antes de necesitarlos facilita pedir ayuda pronto.
+
 ## 🌐 Recursos útiles ✨✨✨
 
 ### Libros
@@ -1213,22 +1285,6 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 
 - Referencia:
   - https://www.ihan.es
-
-## Otras opciones de alimentación
-
-Añadir información respetuosa sobre extracción, conservación, lactancia mixta o alimentación con fórmula cuando sea necesario.
-
-## ❤️ Recordatorio importante ✨✨✨
-
-- Alimentar también es vínculo
-- La lactancia no debería vivirse desde la culpa
-- Pedir ayuda pronto suele evitar muchos problemas
-- Las primeras semanas suelen ser intensas y caóticas
-- El descanso y el apoyo importan muchísimo
-
-## Idea clave
-
-El objetivo es que el bebé coma y que la madre reciba apoyo, sin culpa y con información fiable.
 
 # 6. Cuidados del bebé
 

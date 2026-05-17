@@ -17,8 +17,18 @@
         },
         {
           "id": "plan-parto",
-          "title": "Plan de parto y bolsa",
+          "title": "Plan de parto",
           "file": "./content/modules/03-plan-parto.md"
+        },
+        {
+          "id": "bolsa-hospital",
+          "title": "Bolsa del hospital",
+          "file": "./content/modules/03-bolsa-hospital.md"
+        },
+        {
+          "id": "logistica-hospital",
+          "title": "Logística antes de salir",
+          "file": "./content/modules/03-logistica-hospital.md"
         }
       ]
     },
@@ -30,6 +40,16 @@
           "id": "fases-parto",
           "title": "Fases del parto",
           "file": "./content/modules/04-fases-parto.md"
+        },
+        {
+          "id": "tipos-parto",
+          "title": "Tipos de parto",
+          "file": "./content/modules/04-tipos-parto.md"
+        },
+        {
+          "id": "posturas-expulsivo",
+          "title": "Posturas y expulsivo",
+          "file": "./content/modules/04-posturas-expulsivo.md"
         },
         {
           "id": "alivio-dolor",
@@ -60,8 +80,28 @@
       "lessons": [
         {
           "id": "puerperio",
-          "title": "Puerperio físico y emocional",
+          "title": "Recuperación física postparto",
           "file": "./content/modules/08-puerperio.md"
+        },
+        {
+          "id": "cuidados-puntos-cesarea",
+          "title": "Cesárea, puntos y alarmas",
+          "file": "./content/modules/08-cuidados-puntos-cesarea.md"
+        },
+        {
+          "id": "organizacion-casa",
+          "title": "Organización en casa y visitas",
+          "file": "./content/modules/08-organizacion-casa.md"
+        },
+        {
+          "id": "postparto-emocional",
+          "title": "Postparto emocional",
+          "file": "./content/modules/08-postparto-emocional.md"
+        },
+        {
+          "id": "tramites-postparto",
+          "title": "Trámites tras el nacimiento",
+          "file": "./content/modules/08-tramites-postparto.md"
         }
       ]
     },
@@ -73,6 +113,31 @@
           "id": "lactancia",
           "title": "Inicio de lactancia y alimentación",
           "file": "./content/modules/09-lactancia.md"
+        },
+        {
+          "id": "tomas-agarre",
+          "title": "Tomas, agarre y primeras semanas",
+          "file": "./content/modules/09-tomas-agarre.md"
+        },
+        {
+          "id": "extraccion-conservacion",
+          "title": "Extracción y conservación",
+          "file": "./content/modules/09-extraccion-conservacion.md"
+        },
+        {
+          "id": "formula-biberon",
+          "title": "Fórmula y biberón",
+          "file": "./content/modules/09-formula-biberon.md"
+        },
+        {
+          "id": "problemas-lactancia",
+          "title": "Problemas frecuentes de lactancia",
+          "file": "./content/modules/09-problemas-lactancia.md"
+        },
+        {
+          "id": "recursos-lactancia",
+          "title": "Recursos y apoyo a la lactancia",
+          "file": "./content/modules/09-recursos-lactancia.md"
         }
       ]
     },

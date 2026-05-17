@@ -13,12 +13,12 @@ Sitio privado/familiar de apuntes educativos de preparacion al parto. No sustitu
 
 - Final del embarazo: cambios esperables, prodromos, preparacion emocional y seguridad en cuidados caseros.
 - Senales de parto y alarma: contracciones, rotura de bolsa, movimientos fetales, fiebre, sangrado y motivos para consultar.
-- Plan de parto y bolsa: preferencias, acompanamiento, analgesia, piel con piel, cordon y preparativos.
-- Fases del parto: fase latente, dilatacion activa, expulsivo, alumbramiento, induccion, posiciones, instrumental y cesarea.
+- Plan de parto, bolsa y logistica: preferencias, acompanamiento, analgesia, piel con piel, cordon, maletas y preparativos antes de salir.
+- Parto: fases, tipos de parto, induccion, posiciones, expulsivo, instrumental y cesarea.
 - Alivio del dolor: respiracion, movimiento, agua/calor, masaje, ambiente, epidural y apoyo del acompanante.
 - Primeras horas: piel con piel, pinzamiento si procede, primera toma, revision del bebe y recuperacion materna.
-- Puerperio: recuperacion fisica y emocional, cesarea, lesion perineal, tramites, visitas, alimentacion y senales de alarma.
-- Lactancia y alimentacion: calostro, agarre, frecuencia, formula, conservacion de leche, ingurgitacion, mastitis y recursos.
+- Puerperio: recuperacion fisica, cesarea, lesion perineal, senales de alarma, organizacion en casa, visitas, tramites y postparto emocional.
+- Lactancia y alimentacion: inicio, calostro, agarre, frecuencia, formula, conservacion de leche, ingurgitacion, mastitis y recursos.
 - Cuidados del bebe: cordon, higiene, panal, temperatura, sueno seguro, llanto, alimentacion y observacion.
 
 ## Fuentes base para contraste
