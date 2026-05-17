@@ -4,6 +4,29 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 
 # 🍼 Lactancia y alimentación ✨✨✨
 
+# 🤱 Lactancia materna ✨✨✨
+
+## 🌟 ¿Por qué dar el pecho? ✨✨✨
+
+- Cada familia y cada lactancia son diferentes
+- Evitar vivir la alimentación desde la culpa
+- La lactancia materna puede aportar beneficios, pero necesita apoyo, información y adaptación a cada caso
+
+## Beneficios para el bebé
+
+- nutricionales
+- inmunológicos
+- biológicos
+- vínculo afectivo
+- recomendación de lactancia exclusiva aproximadamente 6 meses
+
+## Beneficios para la madre
+
+- vínculo emocional
+- comodidad
+- económicos
+- beneficios biológicos y hormonales
+
 ## 🤱 Primeras semanas ✨✨✨
 
 - Evitar tetinas y chupetes durante el primer mes si se quiere favorecer la lactancia materna.
@@ -28,7 +51,7 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 - La hidratación la cubre la leche materna o fórmula
 - Consultar siempre con pediatría antes de ofrecer agua en bebés pequeños
 
-## Lactancia materna
+## Puntos básicos
 
 - Calostro: primera leche, alta en defensas
 - Pedir colector de calostro
@@ -38,6 +61,57 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 - Señales de hambre y saciedad.
 - Tomas frecuentes.
 - Dolor, grietas, ingurgitación y mastitis.
+
+# 🟡 Calostro ✨✨✨
+
+- Primeras gotas/leche tras el parto
+- Pequeñas cantidades: aprox 2–20 ml por toma
+- Muy concentrado nutricionalmente
+- Rico en anticuerpos (IgA)
+- Contiene oligosacáridos, lactoferrina y factores de crecimiento
+- Ayuda a colonizar la flora intestinal
+- Efecto laxante para expulsar meconio
+- Aunque parezca poca cantidad, suele ser suficiente los primeros días
+
+# 🍼 Frecuencia de tomas ✨✨✨
+
+- Los recién nacidos suelen pedir muchas tomas
+- Puede haber entre 10 y 12 tomas al día
+- Especialmente frecuente durante las primeras semanas
+- La lactancia suele funcionar “a demanda”
+
+# ⏰ No dejar demasiadas horas sin comer ✨✨✨
+
+- Comentaron intentar que el recién nacido no pase más de unas 4 horas seguidas sin alimentarse en los primeros días
+- Las recomendaciones pueden variar según peso, edad y situación médica
+- Seguir indicaciones de pediatría o matrona
+
+# 🚫 Mitos y realidades sobre lactancia ✨✨✨
+
+## Mitos comentados en el taller
+
+- “Tengo poca leche”
+- “Si te asustas se corta la leche”
+- “Hay alimentos milagro que producen mucha más leche”
+- “Hay alimentos que siempre dan mal sabor a la leche”
+- “Hay que beber muchísima leche o agua para producir leche”
+
+## Idea principal
+
+- Una alimentación equilibrada suele ser suficiente
+- El estrés puede afectar al bienestar, pero no “corta” automáticamente la leche
+
+# 🧸 Inicio de la lactancia tras el nacimiento ✨✨✨
+
+- Se recomendó favorecer contacto piel con piel e inicio precoz de lactancia tras el nacimiento si madre y bebé están bien
+- A veces hay circunstancias médicas que modifican el inicio
+
+# 📚 Recomendaciones generales ✨✨✨
+
+- OMS recomienda:
+  - lactancia materna exclusiva unos 6 meses
+  - posteriormente complementarla con otros alimentos si se desea continuar
+- La duración final de la lactancia depende de cada familia
 
 ## ✋ Extracción manual de leche ✨✨✨
 
