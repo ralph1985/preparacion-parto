@@ -14,6 +14,20 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 - Recordatorio:
   - la lactancia suele requerir aprendizaje tanto del bebé como de la madre
 
+# 🧸 Lactancia y primeros hábitos ✨✨✨
+
+## Chupete y lactancia
+
+- Comentaron evitar chupete durante las primeras semanas si se está estableciendo lactancia materna
+- Referencia aproximada: 4–6 semanas
+- Puede variar según cada bebé y situación
+
+## Agua en bebés
+
+- Los recién nacidos no deben beber agua
+- La hidratación la cubre la leche materna o fórmula
+- Consultar siempre con pediatría antes de ofrecer agua en bebés pequeños
+
 ## Lactancia materna
 
 - Calostro: primera leche, alta en defensas

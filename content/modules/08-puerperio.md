@@ -35,6 +35,44 @@ El postparto necesita información práctica y expectativas realistas.
 - Nota:
   - la recuperación puede ser muy distinta según el tipo de parto y cada persona
 
+# 🗂️ Plan postparto y organización familiar ✨✨✨
+
+## 📋 Elaboración del plan postparto ✨✨✨
+
+- ¿Qué vamos a comer los primeros días?
+- ¿Quién se encargará de tareas domésticas?
+- ¿Quién hará la compra?
+- ¿Cómo vamos a gestionar las visitas?
+- ¿Qué haremos con los consejos contradictorios?
+- ¿Cómo se organizará el cuidado del bebé?
+- ¿Cómo afrontaremos los cambios en la pareja?
+- ¿A quién podemos pedir ayuda si nos saturamos?
+- Preparar ciertas decisiones antes del parto puede reducir estrés posterior
+
+## 🏠 Dejar la casa preparada antes del parto ✨✨✨
+
+- Dejar una limpieza básica hecha
+- Preparar compra inicial
+- Congelar algunas comidas
+- Dejar productos básicos accesibles
+- Preparar ropa cómoda y compresas
+- Organizar zona de descanso y lactancia
+- No se trata de tener todo perfecto, sino de facilitar los primeros días
+
+# 🤝 Estrategias para sobrellevar el postparto ✨✨✨
+
+- Comunicación abierta en la pareja
+- Expresar preocupaciones, miedos y emociones
+- Apoyarse en familia o grupo de apoyo
+- Confiar progresivamente en la propia capacidad
+- Priorizar lo importante y simplificar tareas
+- Pedir ayuda sin culpa
+- Descansar y alimentarse bien
+- Cuidar mínimamente el aspecto personal si ayuda emocionalmente
+- Intentar paseo diario cuando sea posible
+- Limitar o posponer visitas si generan estrés
+- El descanso y la salud mental también forman parte del cuidado del bebé
+
 ## 🥩 Alimentación y recuperación ✨✨✨
 
 - Importancia de buena hidratación
@@ -98,6 +136,41 @@ El postparto necesita información práctica y expectativas realistas.
 - Con lactancia exclusiva la menstruación puede tardar meses en volver
 - Comentaron aproximadamente entre 3 y 18 meses, aunque es muy variable
 - Puede reaparecer desde unas semanas tras el parto incluso dando lactancia
+
+# 🗃️ Trámites administrativos tras el parto ✨✨✨
+
+## Posibles trámites
+
+- Alta del bebé
+- Tarjeta sanitaria
+- Pediatra
+- Prestaciones y permisos
+- Ayudas autonómicas o estatales
+- Beneficiario en Seguridad Social
+- Conviene revisar plazos porque algunos trámites tienen límite temporal
+
+## Enlaces útiles (Madrid)
+
+- Comunidad de Madrid — salud infantil:
+  - https://www.comunidad.madrid/hospital/atencionprimaria/ciudadanos/salud-infantil
+- Comunidad de Madrid — trámites tras tener un hijo:
+  - https://www.comunidad.madrid/salud/he-tenido-hijo
+- Comunidad de Madrid — inscripción de nacimiento:
+  - https://www.comunidad.madrid/servicios/justicia/nacimiento
+- Ayudas económicas CAM:
+  - https://sede.comunidad.madrid/ayudas-becas-subvenciones/ayudas-economicas-natalidad
+- Seguridad Social — prestaciones nacimiento y cuidado:
+  - https://www.seg-social.es/wps/portal/wss/internet/InformacionUtil/44539/de513c99-5885-48bd-8c66-45d2c97ad947/41021nycm
+- Alta de beneficiario Seguridad Social:
+  - https://revista.seg-social.es/-/como-dar-de-alta-a-un-beneficiario-en-la-seguridad-social
+- Tarjeta sanitaria:
+  - https://www.comunidad.madrid/salud/he-tenido-hijo
+
+# ⏳ “El postparto dura 40 días” ✨✨✨
+
+- Tradicionalmente se habla de “cuarentena” o unos 40 días iniciales de recuperación
+- La adaptación física y emocional puede durar bastante más
+- Cada familia necesita tiempos diferentes
 
 # 🚨 Cuándo consultar o acudir a urgencias ✨✨✨
 
@@ -181,3 +254,14 @@ Reparto de tareas, visitas, descanso, alimentación y límites.
 - Pedir ayuda no significa hacerlo mal
 - Descansar también es cuidar al bebé
 - Cada recuperación tiene su ritmo
+
+# 🌤️ Hay luz al final del túnel ✨✨✨
+
+- Los primeros días pueden sentirse caóticos
+- Dormir poco altera mucho las emociones
+- Poco a poco aparecen rutinas
+- La sensación de control suele mejorar con el tiempo
+- No exigirse perfección
+- Paciencia y cariño con uno mismo y con la pareja
+
+> “Poco a poco vuestra familia irá encontrando su propia manera de funcionar.”
