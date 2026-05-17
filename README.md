@@ -22,6 +22,8 @@ el índice del curso desde `content/course.json` y cada lección desde archivos 
 - `content/course-full.md`: versión agregada del curso para lectores sin JavaScript y LLMs.
 - `llms.txt`: resumen estructurado para que un LLM entienda qué contiene la web y qué fuente consultar.
 - `robots.txt` y `sitemap.xml`: descubrimiento básico, manteniendo la web marcada como `noindex`.
+- `AGENTS.md`: guía canónica para LLMs/agentes que vayan a modificar código.
+- `CLAUDE.md` y `.github/copilot-instructions.md`: adaptadores para herramientas concretas que remiten a `AGENTS.md`.
 - `scripts/bump-asset-version.sh`: actualiza los parámetros `?v=` de los assets referenciados en `index.html`.
 - `vercel.json`: cabeceras de seguridad y caché para el despliegue en Vercel.
 
@@ -66,6 +68,12 @@ Si editas módulos, regenera `content/course-full.md` antes de publicar para que
 ```bash
 node scripts/build-course-full.mjs
 ```
+
+## Trabajo con LLMs de código
+
+Para modificar el proyecto con un agente de código, usa `AGENTS.md` como fuente principal de instrucciones. `CLAUDE.md`
+y `.github/copilot-instructions.md` existen para herramientas que buscan esos nombres concretos, pero delegan en
+`AGENTS.md` para evitar divergencias.
 
 ## Añadir o editar apuntes
 
