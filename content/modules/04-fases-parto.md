@@ -103,12 +103,42 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
   - Fórceps
   - Ventosa
 
-#### Cesárea
+#### 🏥 Cesárea ✨✨✨
 
-- Cirugía abdominal
+- Cirugía abdominal para extracción del bebé
 - Indicada si existe riesgo o dificultad
-- Anestesia epidural/raquídea
-- Recuperación más lenta
+- Tiene más riesgos para la madre que un parto vaginal
+
+##### Procedimiento
+
+- Incisión sobre el pubis
+- Anestesia:
+  - Epidural o raquianestesia
+- Se realiza en quirófano
+
+##### Personal habitual presente
+
+- Ginecología
+- Anestesia
+- Pediatría
+- Enfermería
+- Matrona
+
+##### Acompañamiento
+
+- El padre/acompañante puede acompañar si no existe contraindicación
+
+##### Piel con piel
+
+- Si es posible, se realiza piel con piel tras el nacimiento
+
+##### Postoperatorio
+
+- Tras la cesárea:
+  - Vigilancia aproximada durante 2 horas
+  - Control en zona de reanimación/dilatación
+- Recuperación más lenta que parto vaginal
+- Dolor postoperatorio controlado con medicación
 
 ### 6. 🥄 Parto con espátulas ✨✨✨
 
