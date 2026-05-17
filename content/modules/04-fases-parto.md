@@ -85,7 +85,54 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Facilitar descenso del bebé
 - Ayuda al manejo del dolor
 
-### 5. 🩺 Cómo puede finalizar el parto ✨✨✨
+### 5. 🤰 Posiciones durante el expulsivo ✨✨✨
+
+#### 🧎 Posición en cuclillas ✨✨✨
+
+- Aprovecha la gravedad
+- Abre más espacio en la pelvis
+- Sensación de pujo más intensa
+- Buena oxigenación fetal
+- Permite asimetrías para crear más espacio
+- Dirige el pujo hacia delante
+- Menor riesgo de lesiones
+- Más difícil de mantener durante mucho tiempo
+- Menor manipulación por parte de profesionales
+
+#### 🛏️ Posición clásica o litotomía ✨✨✨
+
+- Favorece acceso y trabajo del profesional
+- Mayor vigilancia/control fetal
+- Más cómoda para intervenciones instrumentales
+- Compatible con epidural
+- Postura horizontal
+- Puede aumentar:
+  - Sangrado
+  - Riesgo de lesiones/desgarros
+- Menor ayuda de la gravedad
+
+#### ↔️ Posición decúbito lateral ✨✨✨
+
+- Postura cómoda y más descansada
+- Compatible con epidural
+- Buena oxigenación fetal
+- Buena movilidad del sacro
+- Menor riesgo de desgarro
+- Contracciones más largas y efectivas
+- Menor sensación dolorosa
+
+#### 🐾 Posición cuadrupedia ✨✨✨
+
+- Ángulo óptimo para entrada del bebé en pelvis
+- Reduce presión sobre grandes vasos
+- Mejor control del expulsivo
+- Útil en bebés grandes
+- Favorece movilidad de la pelvis
+- Menos intervenciones
+- Reduce presión sobre zona anal
+- Menor riesgo de lesiones/desgarros
+
+### 6. 🩺 Cómo puede finalizar el parto ✨✨✨
 
 #### Parto vaginal espontáneo
 
@@ -140,7 +187,7 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Recuperación más lenta que parto vaginal
 - Dolor postoperatorio controlado con medicación
 
-### 6. 🥄 Parto con espátulas ✨✨✨
+### 7. 🥄 Parto con espátulas ✨✨✨
 
 - Instrumento metálico
 - Dos brazos con forma de cuchara
@@ -149,7 +196,7 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Ejercen menos presión sobre la cabeza fetal
 - Puede aparecer sensación de presión intensa en la zona anal
 
-### 7. 🔧 Parto con fórceps ✨✨✨
+### 8. 🔧 Parto con fórceps ✨✨✨
 
 - Instrumento articulado
 - Dos cucharas metálicas
@@ -158,25 +205,25 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Puede requerir episiotomía para facilitar extracción
 - Recomendable revisión del suelo pélvico tras el parto
 
-### 8. 🌀 Parto con ventosa (Kiwi) ✨✨✨
+### 9. 🌀 Parto con ventosa (Kiwi) ✨✨✨
 
 - Dispositivo de vacío adherido a la cabeza fetal
 - Ayuda al descenso de la cabeza
 - Puede aparecer cefalohematoma temporal
 - El cefalohematoma suele desaparecer en 24–48h
 
-### 9. Cordón
+### 10. Cordón
 
 - Pinzamiento tardío
 - Más hierro
 
-### 10. Expulsivo
+### 11. Expulsivo
 
 - Cansancio
 - Náuseas
 - Emoción
 
-### 11. Clave
+### 12. Clave
 
 - Flexibilidad
 - Prioridad: madre y bebé
