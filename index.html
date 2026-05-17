@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Apuntes privados de preparación al parto sobre embarazo final, parto, postparto, lactancia y cuidados del bebé, revisados como contenido educativo."
+      content="Guía privada con checklist de preparación al parto, parto, postparto, lactancia y cuidados del bebé, revisada como contenido educativo."
     />
     <meta name="robots" content="noindex, nofollow" />
-    <meta property="og:title" content="Preparación al parto | Apuntes y clases" />
+    <meta property="og:title" content="Preparación al parto | Guía y checklist" />
     <meta
       property="og:description"
-      content="Apuntes privados organizados por módulos para preparar el parto, el postparto, la lactancia y los primeros cuidados del bebé."
+      content="Checklist privada y apuntes organizados por módulos para preparar el parto, el postparto, la lactancia y los primeros cuidados del bebé."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./assets/img/generated/hero-preparacion-parto.png?v=20260515170000" />
+    <meta property="og:image" content="./assets/img/generated/hero-preparacion-parto.png?v=20260517104004" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Preparación al parto | Apuntes y clases" />
+    <meta name="twitter:title" content="Preparación al parto | Guía y checklist" />
     <meta
       name="twitter:description"
-      content="Curso navegable privado de preparación al parto basado en apuntes estructurados por módulos."
+      content="Guía privada con checklist y apuntes estructurados para preparar el parto y el postparto."
     />
-    <title>Preparación al parto | Apuntes y clases</title>
+    <title>Preparación al parto | Guía y checklist</title>
     <link rel="canonical" href="./" />
     <link rel="alternate" type="text/plain" title="Resumen para LLMs" href="./llms.txt" />
     <link rel="alternate" type="text/markdown" title="Curso completo en Markdown" href="./content/course-full.md" />
-    <link rel="icon" type="image/svg+xml" href="./assets/img/favicons/favicon.svg?v=20260515170000" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicons/favicon.svg?v=20260517104004" />
     <link
       rel="preload"
       href="./assets/fonts/manrope-500-700-latin.woff2"
@@ -41,8 +41,8 @@
       type="font/woff2"
       crossorigin
     />
-    <link rel="stylesheet" href="./assets/css/style.css?v=20260515170000" />
-    <link rel="stylesheet" href="./assets/vendor/aos/aos.css?v=20260515170000" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=20260517104004" />
+    <link rel="stylesheet" href="./assets/vendor/aos/aos.css?v=20260517104004" />
   </head>
   <body>
     <header class="l-header" id="header">
@@ -54,6 +54,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item"><a href="#home" class="nav__link">Inicio</a></li>
+            <li class="nav__item"><a href="#checklist" class="nav__link">Checklist</a></li>
             <li class="nav__item"><a href="#curso" class="nav__link">Curso</a></li>
             <li class="nav__item"><a href="#recursos" class="nav__link">Recursos</a></li>
             <li class="nav__item"><a href="#llm" class="nav__link">LLM</a></li>
@@ -72,20 +73,21 @@
       <section class="home" id="home">
         <div class="home__container bd-container">
           <div class="home__data">
-            <p class="home__greeting" data-aos="fade-up">Apuntes privados · preparación al parto</p>
-            <h1 class="home__title" data-aos="fade-up">Un curso claro para llegar al parto con más calma</h1>
+            <p class="home__greeting" data-aos="fade-up">Guía privada · preparación al parto</p>
+            <h1 class="home__title" data-aos="fade-up">Checklist y apuntes para llegar con más calma</h1>
             <p class="home__description" data-aos="fade-up">
-              Material organizado por recorrido: final del embarazo, parto, primeras horas, postparto, lactancia y
-              cuidados del bebé. Incluye notas personales y pautas que deben contrastarse con el equipo sanitario.
+              Recorrido práctico para preparar el final del embarazo, el parto, las primeras horas, el postparto, la
+              lactancia y los cuidados del bebé. Las pautas clínicas deben contrastarse con el equipo sanitario.
             </p>
             <div class="home__button" data-aos="fade-up">
+              <a class="button button--primary" href="#checklist">Abrir checklist</a>
               <a class="button button--primary" href="#curso">Ver curso</a>
               <a class="button button--secondary" href="#recursos">Recursos útiles</a>
             </div>
           </div>
           <figure class="home__figure" data-aos="fade-up">
             <img
-              src="./assets/img/generated/hero-preparacion-parto.png?v=20260515170000"
+              src="./assets/img/generated/hero-preparacion-parto.png?v=20260517104004"
               alt="Clase de preparación al parto en un espacio tranquilo"
               width="1792"
               height="1024"
@@ -103,6 +105,28 @@
         la semana de embarazo, antecedentes y situación clínica.
       </section>
 
+      <section class="checklist section" id="checklist">
+        <div class="bd-container">
+          <h2 class="section-title" data-aos="fade-up">Checklist</h2>
+          <p class="section-subtitle" data-aos="fade-up">
+            Tareas y recordatorios rápidos para revisar antes, durante y después del parto. El progreso se guarda solo
+            en este navegador.
+          </p>
+
+          <div class="checklist__summary" data-aos="fade-up" aria-live="polite">
+            <div>
+              <p class="checklist__eyebrow">Progreso total</p>
+              <p class="checklist__total" id="checklist-total">0 de 0</p>
+            </div>
+            <button class="button button--secondary checklist__reset-all" id="checklist-reset-all" type="button">
+              Reiniciar todo
+            </button>
+          </div>
+
+          <div class="checklist__grid" id="checklist-grid" data-aos="fade-up"></div>
+        </div>
+      </section>
+
       <section class="course section" id="curso">
         <div class="bd-container">
           <h2 class="section-title" data-aos="fade-up">Curso</h2>
@@ -115,7 +139,7 @@
             <aside class="course__sidebar" aria-label="Índice del curso">
               <div class="course__intro">
                 <img
-                  src="./assets/img/generated/modulos-preparacion-parto.png?v=20260515170000"
+                  src="./assets/img/generated/modulos-preparacion-parto.png?v=20260517104004"
                   alt="Apuntes de preparación al parto sobre una mesa"
                   width="1536"
                   height="1536"
@@ -224,7 +248,7 @@
       </div>
     </footer>
 
-    <script src="./assets/vendor/aos/aos.js?v=20260515170000"></script>
-    <script src="./assets/js/script.js?v=20260515170000"></script>
+    <script src="./assets/vendor/aos/aos.js?v=20260517104004"></script>
+    <script src="./assets/js/script.js?v=20260517104004"></script>
   </body>
 </html>

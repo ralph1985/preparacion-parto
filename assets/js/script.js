@@ -12,9 +12,120 @@ const lessonPanel = document.getElementById("lesson-panel");
 const courseDrawer = document.getElementById("course-drawer");
 const courseDrawerOpen = document.getElementById("course-drawer-open");
 const courseDrawerClose = document.getElementById("course-drawer-close");
+const checklistGrid = document.getElementById("checklist-grid");
+const checklistTotal = document.getElementById("checklist-total");
+const checklistResetAll = document.getElementById("checklist-reset-all");
 
 let course = null;
 let flatLessons = [];
+
+const CHECKLIST_STORAGE_KEY = "preparacion-parto-checklist-v1";
+
+const checklistSections = [
+  {
+    id: "antes-parto",
+    title: "Antes del parto",
+    lessonId: "final-embarazo",
+    items: [
+      { id: "dudas-equipo", text: "Anotar dudas para matrona, ginecologia o equipo sanitario.", review: true },
+      { id: "descanso-hidratacion", text: "Revisar descanso, hidratacion, movimiento suave y comidas faciles." },
+      { id: "acompanante", text: "Acordar el papel del acompanante durante espera, traslado y hospital." },
+      { id: "perine", text: "Confirmar medidas seguras de cuidado del perine con profesionales.", review: true },
+    ],
+  },
+  {
+    id: "salida-hospital",
+    title: "Senales y salida al hospital",
+    lessonId: "senales-parto",
+    items: [
+      { id: "regla-contracciones", text: "Tener clara la regla orientativa de contracciones indicada por el centro.", review: true },
+      { id: "alarma-embarazo", text: "Revisar senales de alarma: sangrado, fiebre, dolor continuo, bolsa no clara o menos movimientos.", review: true },
+      { id: "telefono-matronas", text: "Guardar el telefono de asistencia o urgencias del centro de referencia." },
+      { id: "ruta-urgencias", text: "Confirmar por donde entrar el dia del parto y como llegar." },
+    ],
+  },
+  {
+    id: "bolsa-hospital",
+    title: "Bolsa hospital",
+    lessonId: "plan-parto",
+    items: [
+      { id: "documentacion", text: "Preparar DNI, tarjeta sanitaria, historia del embarazo y documentacion familiar si aplica." },
+      { id: "madre", text: "Preparar bolsa de la madre: ropa de salida, aseo, zapatillas, bragas, agua/snacks permitidos y apoyo para el dolor." },
+      { id: "acompanante", text: "Preparar bolsa del acompanante: comida, bebida, abrigo o sudadera, cargador y ropa comoda." },
+      { id: "bebe", text: "Preparar bolsa del bebe: ropa de alta, gorrito, manta, panales, muselinas y basicos de higiene." },
+      { id: "tecnologia", text: "Cargar moviles, preparar cargadores, powerbank, cascos y musica offline." },
+      { id: "coche", text: "Dejar coche listo con gasolina y sillita instalada." },
+    ],
+  },
+  {
+    id: "plan-parto",
+    title: "Plan de parto",
+    lessonId: "plan-parto",
+    items: [
+      { id: "preferencias", text: "Revisar preferencias de acompanamiento, movilidad, ambiente y alivio del dolor." },
+      { id: "cesarea", text: "Anotar preferencias si hay cesarea o separacion madre-bebe." },
+      { id: "piel-cordon", text: "Confirmar piel con piel, clampaje del cordon y lactancia inicial segun situacion clinica.", review: true },
+      { id: "documento", text: "Imprimir o guardar el plan de parto en el movil." },
+    ],
+  },
+  {
+    id: "primeras-horas",
+    title: "Primeras horas",
+    lessonId: "primeras-horas",
+    items: [
+      { id: "piel-piel", text: "Priorizar piel con piel si madre y bebe estan bien.", review: true },
+      { id: "primera-toma", text: "Pedir ayuda para primera toma o agarre si se desea lactancia." },
+      { id: "revisiones", text: "Preguntar que revisiones o pruebas se haran al bebe y cuando." },
+      { id: "recuperacion", text: "Avisar si hay mareo, dolor importante, sangrado llamativo o inseguridad al levantarse.", review: true },
+    ],
+  },
+  {
+    id: "postparto-casa",
+    title: "Postparto en casa",
+    lessonId: "puerperio",
+    items: [
+      { id: "comida", text: "Dejar compra inicial o comidas sencillas preparadas." },
+      { id: "visitas", text: "Acordar limites de visitas y quien comunica esos limites." },
+      { id: "tareas", text: "Repartir tareas domesticas, compra, descanso y cuidado del bebe." },
+      { id: "zona-descanso", text: "Preparar zona de descanso, lactancia o alimentacion, compresas y ropa comoda." },
+      { id: "alarma-postparto", text: "Revisar senales de alarma fisicas y emocionales para consultar pronto.", review: true },
+    ],
+  },
+  {
+    id: "lactancia",
+    title: "Lactancia y alimentacion",
+    lessonId: "lactancia",
+    items: [
+      { id: "agarre", text: "Pedir ayuda temprana si hay dolor, grietas, mal agarre o dudas con tomas." },
+      { id: "demanda", text: "Tener presentes libre demanda, piel con piel y senales de hambre/saciedad." },
+      { id: "sin-agua", text: "Recordar que el recien nacido no debe tomar agua salvo indicacion profesional.", review: true },
+      { id: "formula", text: "Si se usa formula, seguir instrucciones del envase y pediatria/matrona.", review: true },
+      { id: "apoyos", text: "Guardar recursos de lactancia, grupo de apoyo o telefono del centro." },
+    ],
+  },
+  {
+    id: "cuidados-bebe",
+    title: "Cuidados del bebe",
+    lessonId: "cuidados-bebe",
+    items: [
+      { id: "cordon", text: "Revisar cuidados del cordon y signos de infeccion con pediatria/matrona.", review: true },
+      { id: "sueno", text: "Preparar un entorno de sueno seguro segun recomendaciones actuales.", review: true },
+      { id: "temperatura", text: "Tener termometro y criterios claros para consultar por fiebre o mal estado.", review: true },
+      { id: "panales", text: "Observar panales, alimentacion y comportamiento general del bebe." },
+    ],
+  },
+  {
+    id: "tramites-contactos",
+    title: "Tramites y contactos",
+    lessonId: "puerperio",
+    items: [
+      { id: "alta-bebe", text: "Revisar alta del bebe, tarjeta sanitaria, pediatra y beneficiario en Seguridad Social." },
+      { id: "permisos", text: "Revisar permisos, prestaciones y posibles ayudas con sus plazos." },
+      { id: "contactos", text: "Guardar telefonos utiles: urgencias, matronas, pediatria y apoyo familiar." },
+      { id: "citas", text: "Anotar revisiones de madre y bebe tras el alta." },
+    ],
+  },
+];
 
 function openCourseDrawer() {
   if (!courseDrawer || courseDrawer.open) return;
@@ -126,6 +237,161 @@ function inlineMarkdown(value) {
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
     .replace(/\*(.+?)\*/g, "<em>$1</em>")
     .replace(/`(.+?)`/g, "<code>$1</code>");
+}
+
+function getChecklistProgress() {
+  try {
+    return JSON.parse(window.localStorage.getItem(CHECKLIST_STORAGE_KEY)) || {};
+  } catch {
+    return {};
+  }
+}
+
+function saveChecklistProgress(progress) {
+  try {
+    window.localStorage.setItem(CHECKLIST_STORAGE_KEY, JSON.stringify(progress));
+  } catch {
+    // The checklist remains usable even if storage is disabled.
+  }
+}
+
+function getChecklistItemKey(sectionId, itemId) {
+  return `${sectionId}:${itemId}`;
+}
+
+function updateChecklistSummary() {
+  if (!checklistGrid || !checklistTotal) return;
+
+  const checkboxes = checklistGrid.querySelectorAll(".checklist__input");
+  const completed = checklistGrid.querySelectorAll(".checklist__input:checked").length;
+  checklistTotal.textContent = `${completed} de ${checkboxes.length}`;
+
+  checklistSections.forEach((section) => {
+    const sectionCard = checklistGrid.querySelector(`[data-checklist-section="${section.id}"]`);
+    if (!sectionCard) return;
+
+    const sectionInputs = sectionCard.querySelectorAll(".checklist__input");
+    const sectionCompleted = sectionCard.querySelectorAll(".checklist__input:checked").length;
+    const sectionCount = sectionCard.querySelector(".checklist__count");
+    if (sectionCount) sectionCount.textContent = `${sectionCompleted}/${sectionInputs.length}`;
+  });
+}
+
+function renderChecklist() {
+  if (!checklistGrid) return;
+
+  const progress = getChecklistProgress();
+  checklistGrid.innerHTML = checklistSections
+    .map((section) => {
+      const items = section.items
+        .map((item) => {
+          const inputId = `checklist-${section.id}-${item.id}`;
+          const key = getChecklistItemKey(section.id, item.id);
+          const checked = progress[key] ? " checked" : "";
+          const reviewLabel = item.review
+            ? '<span class="checklist__tag">Revisar con profesional</span>'
+            : "";
+
+          return `
+            <li class="checklist__item">
+              <input class="checklist__input" type="checkbox" id="${escapeHtml(inputId)}" data-key="${escapeHtml(key)}"${checked}>
+              <label class="checklist__label" for="${escapeHtml(inputId)}">
+                <span>${escapeHtml(item.text)}</span>
+                ${reviewLabel}
+              </label>
+            </li>
+          `;
+        })
+        .join("");
+
+      return `
+        <article class="checklist__card" data-checklist-section="${escapeHtml(section.id)}">
+          <div class="checklist__card-header">
+            <div>
+              <p class="checklist__eyebrow">Momento</p>
+              <h3>${escapeHtml(section.title)}</h3>
+            </div>
+            <span class="checklist__count">0/${section.items.length}</span>
+          </div>
+          <ul class="checklist__items">
+            ${items}
+          </ul>
+          <div class="checklist__actions">
+            <a href="#leccion=${escapeHtml(section.lessonId)}" data-checklist-lesson="${escapeHtml(section.lessonId)}">Ver apuntes</a>
+            <button type="button" data-reset-section="${escapeHtml(section.id)}">Reiniciar</button>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+
+  checklistGrid.addEventListener("change", (event) => {
+    const target = event.target;
+    if (!(target instanceof HTMLInputElement) || !target.matches(".checklist__input")) return;
+
+    const key = target.dataset.key;
+    if (!key) return;
+
+    const nextProgress = getChecklistProgress();
+    if (target.checked) {
+      nextProgress[key] = true;
+    } else {
+      delete nextProgress[key];
+    }
+
+    saveChecklistProgress(nextProgress);
+    updateChecklistSummary();
+  });
+
+  checklistGrid.addEventListener("click", (event) => {
+    const target = event.target;
+    if (!(target instanceof HTMLElement)) return;
+
+    const lessonLink = target.closest("[data-checklist-lesson]");
+    if (lessonLink instanceof HTMLElement) {
+      const lessonId = lessonLink.dataset.checklistLesson;
+      const courseSection = document.getElementById("curso");
+      if (lessonId && courseSection) {
+        event.preventDefault();
+        setLessonHash(lessonId);
+        courseSection.scrollIntoView({ block: "start" });
+      }
+      return;
+    }
+
+    const resetButton = target.closest("[data-reset-section]");
+    if (!(resetButton instanceof HTMLElement)) return;
+
+    const sectionId = resetButton.dataset.resetSection;
+    if (!sectionId) return;
+
+    const nextProgress = getChecklistProgress();
+    Object.keys(nextProgress).forEach((key) => {
+      if (key.startsWith(`${sectionId}:`)) delete nextProgress[key];
+    });
+
+    saveChecklistProgress(nextProgress);
+    checklistGrid
+      .querySelectorAll(`[data-checklist-section="${sectionId}"] .checklist__input`)
+      .forEach((input) => {
+        if (input instanceof HTMLInputElement) input.checked = false;
+      });
+    updateChecklistSummary();
+  });
+
+  updateChecklistSummary();
+}
+
+if (checklistResetAll) {
+  checklistResetAll.addEventListener("click", () => {
+    saveChecklistProgress({});
+    if (checklistGrid) {
+      checklistGrid.querySelectorAll(".checklist__input").forEach((input) => {
+        if (input instanceof HTMLInputElement) input.checked = false;
+      });
+    }
+    updateChecklistSummary();
+  });
 }
 
 function renderMarkdown(markdown) {
@@ -304,6 +570,7 @@ window.addEventListener("scroll", requestScrollUpdate, { passive: true });
 window.addEventListener("hashchange", () => loadLesson(normalizeHash()));
 window.addEventListener("load", () => {
   requestScrollUpdate();
+  renderChecklist();
   initCourse();
 });
 

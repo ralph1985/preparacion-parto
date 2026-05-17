@@ -304,6 +304,147 @@ section[id] {
   border-radius: 0.75rem;
 }
 
+.checklist__summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.4rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.85rem;
+  background: var(--white);
+}
+
+.checklist__eyebrow {
+  color: var(--clay-deep);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.checklist__total {
+  margin-top: 0.15rem;
+  color: var(--ink);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.checklist__grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.checklist__card {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.85rem;
+  background: var(--white);
+}
+
+.checklist__card-header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.checklist__card h3 {
+  margin-top: 0.18rem;
+  font-size: 1.45rem;
+}
+
+.checklist__count {
+  flex: 0 0 auto;
+  min-width: 3.2rem;
+  padding: 0.25rem 0.55rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.checklist__items {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.checklist__item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.65rem;
+  align-items: start;
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  background: #fffaf5;
+}
+
+.checklist__input {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0.17rem 0 0;
+  accent-color: var(--clay-deep);
+}
+
+.checklist__label {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--ink);
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.checklist__input:checked + .checklist__label span:first-child {
+  color: #6f675f;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.08em;
+}
+
+.checklist__tag {
+  width: fit-content;
+  padding: 0.22rem 0.5rem;
+  border-radius: 999px;
+  background: var(--sage-soft);
+  color: #3f5338;
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.checklist__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.15rem;
+}
+
+.checklist__actions a,
+.checklist__actions button {
+  color: var(--clay-deep);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.checklist__actions button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 .course__layout {
   display: grid;
   gap: 1.25rem;
@@ -515,8 +656,18 @@ section[id] {
 
   .home__button .button,
   .lesson__pager .button,
-  .llm__actions .button {
+  .llm__actions .button,
+  .checklist__reset-all {
     width: 100%;
+  }
+
+  .checklist__summary {
+    margin-top: 1.35rem;
+  }
+
+  .checklist__card,
+  .checklist__summary {
+    border-radius: 0.65rem;
   }
 
   .course__layout {
@@ -627,7 +778,9 @@ section[id] {
   .lesson,
   .resource,
   .contact__panel,
-  .llm__panel {
+  .llm__panel,
+  .checklist__card,
+  .checklist__summary {
     border-radius: 0.65rem;
   }
 
@@ -687,6 +840,10 @@ section[id] {
   .course__layout {
     grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
     align-items: start;
+  }
+
+  .checklist__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .course__sidebar {
