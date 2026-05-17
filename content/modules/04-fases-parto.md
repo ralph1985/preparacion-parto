@@ -220,12 +220,12 @@ Salida de la placenta y vigilancia inicial de sangrado, bienestar materno y vín
 - Dispositivo de vacío adherido a la cabeza fetal
 - Ayuda al descenso de la cabeza
 - Puede aparecer cefalohematoma temporal
-- El cefalohematoma suele desaparecer en 24–48h
+- El bulto o marca superficial puede mejorar en días, pero un cefalohematoma real puede tardar semanas en reabsorberse. Confirmar siempre con pediatría.
 
 ### 10. Cordón
 
 - Pinzamiento tardío
-- Más hierro
+- Suele recomendarse no antes de 1 minuto si madre y bebé están bien, por beneficios como mejor reserva de hierro del bebé.
 
 ### 11. Expulsivo
 

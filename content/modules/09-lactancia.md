@@ -143,6 +143,7 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 - Agua alrededor de 70ºC
 - Dato sensible y variable:
   - seguir siempre las instrucciones del envase y las indicaciones de pediatría/matrona
+  - preparar con higiene estricta, enfriar antes de ofrecer y desechar restos según la guía usada por el centro
 
 ## 🧠 Método Kassing ✨✨✨
 
@@ -163,29 +164,25 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 
 ### Recién extraída
 
-- 15ºC → hasta 24h
-- 19-22ºC → hasta 10h
-- 22-25ºC → 4-6h
+- Temperatura ambiente fresca (hasta 25ºC) → hasta 4h como criterio conservador
 
 ### Nevera (<4ºC)
 
-- 4-7 días aprox.
+- Hasta 4 días como criterio conservador
 - mejor al fondo de la nevera
 
 ### Congelador
 
-- congelador dentro de la nevera → 2 semanas
-- congelador combi → 3-4 meses
-- congelador independiente (-19ºC aprox.) → 6-12 meses
+- congelador → mejor dentro de 6 meses; hasta 12 meses puede aceptarse si se mantiene temperatura adecuada
 
 ### Calostro
 
-- puede congelarse hasta unos 6 meses
+- consultar con matrona si se extrae antes del parto o en los primeros días
 
 ### Leche descongelada
 
 - en nevera → usar en 24h
-- calentada → usar en pocas horas
+- calentada o a temperatura ambiente → usar en unas 2h
 - NO volver a congelar
 
 ## 🍼 Biberones recomendados ✨✨✨
@@ -226,14 +223,14 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
 ## 🧊 Ingurgitación mamaria ✨✨✨
 
 - Congestión e inflamación del pecho por acumulación de leche
-- Ducha con agua tibia
+- Calor suave solo si ayuda antes de la toma; evitar calor mantenido si aumenta inflamación
 - Aplicar frío en ambos pechos
 - Técnica de presión inversa suavizante
-- Drenar el pecho
+- Favorecer tomas eficaces o extracción mínima de alivio, evitando sobreestimular
 - Antiinflamatorios si lo pauta el profesional
 - Si no mejora en 24-72h consultar
 - Referencia:
-  - https://share.google/0fABt9OuyXIIDodRV
+  - revisar con matrona o asesora de lactancia
 
 ### ✋ Presión inversa suavizante ✨✨✨
 
@@ -262,6 +259,7 @@ La lactancia se aprende. Conviene explicar fisiología básica, práctica y señ
   - dolor intenso
   - enrojecimiento
   - malestar general
+  - empeoramiento en 24h o bebé con dificultad para alimentarse
 
 ## ⚪ Perlas de leche ✨✨✨
 

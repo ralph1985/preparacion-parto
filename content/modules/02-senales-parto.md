@@ -15,7 +15,8 @@ Esta lección separa señales habituales de inicio de parto de situaciones en la
   - 3 contracciones
   - cada 10 minutos
   - durante 3 horas
-- En ese punto probablemente esté comenzando el parto activo y toca ir al hospital
+- En ese punto puede estar comenzando el parto activo y conviene llamar o acudir según el protocolo del hospital.
+- Esta regla no sustituye las indicaciones del centro. Si rompes bolsa, disminuyen los movimientos del bebé, hay sangrado o aparece mal estado general, consulta antes.
 
 ## 🏥 Llegada al hospital ✨✨✨
 
@@ -28,9 +29,11 @@ Esta lección separa señales habituales de inicio de parto de situaciones en la
 - Dolor intenso continuo.
 - Disminución clara de movimientos fetales.
 - Líquido amniótico con color u olor preocupante.
+- Rotura de bolsa antes de tener indicaciones claras del centro, especialmente si el líquido no es claro.
+- Dolor de cabeza intenso, alteraciones visuales, hinchazón brusca o dolor fuerte en la boca del estómago.
 
 ## ☎️ Contacto de asistencia ✨✨✨
 
-- Teléfono asistencia matronas 24/7: 651834333
+- Teléfono asistencia matronas 24/7 del centro de referencia: 651834333
 
 Completar con las indicaciones concretas del hospital, matrona o equipo sanitario de referencia.

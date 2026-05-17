@@ -16,7 +16,7 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 ### 👨‍👩‍👧 Acompañamiento ✨✨✨
 
 - Acompañante:
-  - Rafael García Prieto
+  - Acompañante elegido por la madre
 - Desea estar acompañada durante el parto
 - En caso de cesárea:
   - Desea acompañamiento dentro de quirófano si es posible
@@ -54,7 +54,7 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 
 - Clampaje tardío del cordón:
   - ✔️ Sí
-  - Retrasar corte hasta que deje de latir o al menos 1 minuto
+  - Retrasar corte al menos 1 minuto si madre y bebé están bien y el equipo lo considera posible
 
 - Pinzamiento tardío (1–5 min)
 - Donación de sangre de cordón:
@@ -119,7 +119,7 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 - Bolsa de aseo
 - Zapatillas cómodas
 
-### 👶 Bebé (Irati) ✨✨✨
+### 👶 Bebé ✨✨✨
 
 - Ropa para el alta
 - Gorrito extra
@@ -161,8 +161,8 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 
 - Preparar las 3 maletas:
   - Madre
-  - Padre
-  - Hija
+  - Acompañante
+  - Bebé
 
 ### 👩 Madre ✨✨✨
 
@@ -196,7 +196,7 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 - Llevar bebida
 - Llevar ropa cómoda para muchas horas
 
-### 👶 Bebé (Irati) ✨✨✨
+### 👶 Bebé ✨✨✨
 
 - Pañales
 - Toallitas

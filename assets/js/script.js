@@ -88,6 +88,7 @@ function escapeHtml(value) {
 
 function inlineMarkdown(value) {
   return escapeHtml(value)
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" rel="noopener noreferrer">$1</a>')
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
     .replace(/\*(.+?)\*/g, "<em>$1</em>")
     .replace(/`(.+?)`/g, "<code>$1</code>");
@@ -96,65 +97,71 @@ function inlineMarkdown(value) {
 function renderMarkdown(markdown) {
   const lines = markdown.split(/\r?\n/);
   const html = [];
-  let listType = null;
+  const listStack = [];
 
-  function closeList() {
-    if (!listType) return;
-    html.push(`</${listType}>`);
-    listType = null;
+  function closeLists(targetDepth = 0) {
+    while (listStack.length > targetDepth) {
+      const list = listStack.pop();
+      if (list.hasOpenItem) html.push("</li>");
+      html.push(`</${list.type}>`);
+    }
+  }
+
+  function ensureList(type, depth) {
+    while (listStack.length > depth) closeLists(depth);
+
+    const current = listStack[depth];
+    if (!current || current.type !== type) {
+      closeLists(depth);
+      html.push(`<${type}>`);
+      listStack.push({ type, hasOpenItem: false });
+    }
+  }
+
+  function addListItem(type, depth, content) {
+    ensureList(type, depth);
+
+    const current = listStack[depth];
+    if (current.hasOpenItem) html.push("</li>");
+    html.push(`<li>${inlineMarkdown(content)}`);
+    current.hasOpenItem = true;
   }
 
   lines.forEach((line) => {
     const trimmed = line.trim();
 
     if (!trimmed) {
-      closeList();
+      closeLists();
       return;
     }
 
-    if (trimmed.startsWith("# ")) {
-      closeList();
-      html.push(`<h1>${inlineMarkdown(trimmed.slice(2))}</h1>`);
+    const heading = /^(#{1,6})\s+(.+)$/.exec(trimmed);
+    if (heading) {
+      closeLists();
+      const level = heading[1].length;
+      html.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`);
       return;
     }
 
-    if (trimmed.startsWith("## ")) {
-      closeList();
-      html.push(`<h2>${inlineMarkdown(trimmed.slice(3))}</h2>`);
+    const unorderedItem = /^(\s*)[-*]\s+(.+)$/.exec(line);
+    if (unorderedItem) {
+      const depth = Math.floor(unorderedItem[1].replace(/\t/g, "  ").length / 2);
+      addListItem("ul", depth, unorderedItem[2].trim());
       return;
     }
 
-    if (trimmed.startsWith("### ")) {
-      closeList();
-      html.push(`<h3>${inlineMarkdown(trimmed.slice(4))}</h3>`);
+    const orderedItem = /^(\s*)\d+\.\s+(.+)$/.exec(line);
+    if (orderedItem) {
+      const depth = Math.floor(orderedItem[1].replace(/\t/g, "  ").length / 2);
+      addListItem("ol", depth, orderedItem[2].trim());
       return;
     }
 
-    if (/^[-*]\s+/.test(trimmed)) {
-      if (listType !== "ul") {
-        closeList();
-        html.push("<ul>");
-        listType = "ul";
-      }
-      html.push(`<li>${inlineMarkdown(trimmed.replace(/^[-*]\s+/, ""))}</li>`);
-      return;
-    }
-
-    if (/^\d+\.\s+/.test(trimmed)) {
-      if (listType !== "ol") {
-        closeList();
-        html.push("<ol>");
-        listType = "ol";
-      }
-      html.push(`<li>${inlineMarkdown(trimmed.replace(/^\d+\.\s+/, ""))}</li>`);
-      return;
-    }
-
-    closeList();
+    closeLists();
     html.push(`<p>${inlineMarkdown(trimmed)}</p>`);
   });
 
-  closeList();
+  closeLists();
   return html.join("");
 }
 

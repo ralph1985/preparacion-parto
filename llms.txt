@@ -1,0 +1,37 @@
+# Preparacion al parto
+
+Sitio privado/familiar de apuntes educativos de preparacion al parto. No sustituye el seguimiento de matrona, ginecologia, pediatria, urgencias ni del equipo sanitario.
+
+## Como leer esta web
+
+- La portada carga las lecciones con JavaScript desde `content/course.json`.
+- Para entender todo el curso sin ejecutar JavaScript, lee `content/course-full.md`.
+- Cada leccion original esta en `content/modules/*.md`.
+- Algunas notas son preferencias personales o protocolos del centro de referencia, no recomendaciones universales.
+
+## Contenido principal
+
+- Final del embarazo: cambios esperables, prodromos, preparacion emocional y seguridad en cuidados caseros.
+- Senales de parto y alarma: contracciones, rotura de bolsa, movimientos fetales, fiebre, sangrado y motivos para consultar.
+- Plan de parto y bolsa: preferencias, acompanamiento, analgesia, piel con piel, cordon y preparativos.
+- Fases del parto: fase latente, dilatacion activa, expulsivo, alumbramiento, induccion, posiciones, instrumental y cesarea.
+- Alivio del dolor: respiracion, movimiento, agua/calor, masaje, ambiente, epidural y apoyo del acompanante.
+- Primeras horas: piel con piel, pinzamiento si procede, primera toma, revision del bebe y recuperacion materna.
+- Puerperio: recuperacion fisica y emocional, cesarea, lesion perineal, tramites, visitas, alimentacion y senales de alarma.
+- Lactancia y alimentacion: calostro, agarre, frecuencia, formula, conservacion de leche, ingurgitacion, mastitis y recursos.
+- Cuidados del bebe: cordon, higiene, panal, temperatura, sueno seguro, llanto, alimentacion y observacion.
+
+## Fuentes base para contraste
+
+- Ministerio de Sanidad, Guia de Practica Clinica sobre la Atencion al Parto Normal: https://www.sanidad.gob.es/areas/calidadAsistencial/estrategias/atencionPartoNormal/home.htm
+- Comunidad de Madrid, parto y postparto: https://www.comunidad.madrid/salud/parto-postparto
+- OMS, intrapartum care for a positive childbirth experience: https://www.who.int/publications/i/item/9789241550215
+- OMS, lactancia materna: https://www.who.int/es/health-topics/breastfeeding
+- CDC, almacenamiento de leche materna: https://www.cdc.gov/breastfeeding/breast-milk-preparation-and-storage/handling-breastmilk.html
+- NHS, preparacion de formula: https://www.nhs.uk/baby/breastfeeding-and-bottle-feeding/bottle-feeding/making-up-baby-formula/
+
+## Prioridad interpretativa
+
+1. Ante sintomas de alarma, priorizar consulta profesional inmediata.
+2. Si una pauta depende del centro, tratarla como protocolo local pendiente de confirmar.
+3. Si hay conflicto entre apuntes personales y fuentes oficiales/profesionales, priorizar indicacion sanitaria individual.

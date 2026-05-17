@@ -1,6 +1,6 @@
 # Preparación al parto
 
-Web estática pública para organizar apuntes de clases de preparación al parto como un curso navegable.
+Web estática privada/familiar para organizar apuntes de clases de preparación al parto como un curso navegable.
 
 El proyecto no usa framework ni proceso de build: el navegador carga `index.html`, los estilos y scripts locales,
 el índice del curso desde `content/course.json` y cada lección desde archivos Markdown en `content/modules/`.
@@ -19,6 +19,9 @@ el índice del curso desde `content/course.json` y cada lección desde archivos 
 - `assets/img/generated/`: imágenes principales de la web.
 - `content/course.json`: índice de módulos y lecciones.
 - `content/modules/*.md`: apuntes editables.
+- `content/course-full.md`: versión agregada del curso para lectores sin JavaScript y LLMs.
+- `llms.txt`: resumen estructurado para que un LLM entienda qué contiene la web y qué fuente consultar.
+- `robots.txt` y `sitemap.xml`: descubrimiento básico, manteniendo la web marcada como `noindex`.
 - `scripts/bump-asset-version.sh`: actualiza los parámetros `?v=` de los assets referenciados en `index.html`.
 - `vercel.json`: cabeceras de seguridad y caché para el despliegue en Vercel.
 
@@ -46,9 +49,23 @@ http://localhost:8080
 4. Lee la lección indicada por el hash `#leccion=<id>` o abre la primera.
 5. Convierte un subconjunto simple de Markdown a HTML.
 
-El parser Markdown integrado soporta títulos `#`, `##`, `###`, listas ordenadas, listas sin ordenar, negrita, cursiva y
-texto en código. Si necesitas tablas, enlaces complejos, citas o bloques de código, conviene sustituirlo por un parser
-Markdown probado o ampliar el renderizador con tests manuales claros.
+El parser Markdown integrado soporta encabezados `#` hasta `######`, listas ordenadas, listas sin ordenar, negrita,
+cursiva, texto en código y enlaces básicos. Si necesitas tablas, citas o bloques de código, conviene
+sustituirlo por un parser Markdown probado o ampliar el renderizador con tests manuales claros.
+
+## Lectura por LLMs
+
+La portada carga las lecciones mediante `fetch`, así que un lector que no ejecute JavaScript puede no ver todo el
+contenido del curso. Para compartir la web con ChatGPT u otro LLM, la portada enlaza:
+
+- `llms.txt`: mapa breve del sitio, prioridades de interpretación y fuentes base.
+- `content/course-full.md`: curso completo concatenado desde los módulos Markdown.
+
+Si editas módulos, regenera `content/course-full.md` antes de publicar para que coincida con la web.
+
+```bash
+node scripts/build-course-full.mjs
+```
 
 ## Añadir o editar apuntes
 
@@ -84,6 +101,7 @@ El script actualiza las referencias de `index.html`.
 Está preparado para Vercel como sitio estático. `vercel.json` define:
 
 - Cabeceras de seguridad: CSP, HSTS, `X-Content-Type-Options`, `Referrer-Policy` y `Permissions-Policy`.
+- `X-Robots-Tag: noindex, nofollow`, porque el contenido contiene apuntes privados/familiares.
 - Caché larga e inmutable para `/assets/(.*)`.
 - Revalidación inmediata para `/`, `/index.html` y `/content/(.*)`, de forma que los apuntes Markdown puedan cambiar sin
   depender de una caché prolongada.

@@ -14,11 +14,10 @@ Este módulo sirve para ordenar lo que ocurre en las últimas semanas y preparar
 
 ### 🌱 Cola de caballo y tomillo ✨✨✨
 
-- Uso orientado a cicatrización/preparación
-- Preparación:
-  - Infusionar las hierbas
-- Aplicación:
-  - Aplicar con pañito de algodón en la vagina
+- Nota de seguridad:
+  - No usar aplicaciones vaginales de hierbas, infusiones o preparados caseros salvo indicación explícita de matrona/ginecología.
+  - La zona vaginal tiene microbiota propia y los preparados no estériles pueden irritar o aumentar riesgo de infección.
+  - Si se busca preparar o cuidar el periné, priorizar medidas recomendadas por el equipo sanitario.
 
 ## Idea clave
 

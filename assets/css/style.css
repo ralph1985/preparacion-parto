@@ -52,6 +52,9 @@ body {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 ul,
 ol {
@@ -60,7 +63,10 @@ ol {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: "Playfair Display", serif;
   color: var(--ink);
   line-height: 1.05;
@@ -348,7 +354,7 @@ section[id] {
 .course__lesson {
   width: 100%;
   display: block;
-  padding: 0.5rem 0.6rem;
+  padding: 0.65rem 0.7rem;
   border-radius: 0.45rem;
   color: var(--ink);
   line-height: 1.35;
@@ -376,6 +382,16 @@ section[id] {
   font-size: clamp(1.45rem, 3vw, 2rem);
 }
 
+.lesson h4,
+.lesson h5,
+.lesson h6 {
+  margin-top: 1.35rem;
+  margin-bottom: 0.55rem;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
 .lesson p + p,
 .lesson ul + p,
 .lesson ol + p {
@@ -394,6 +410,20 @@ section[id] {
 
 .lesson li + li {
   margin-top: 0.45rem;
+}
+
+.lesson li > ul,
+.lesson li > ol {
+  margin: 0.35rem 0 0.2rem;
+}
+
+.lesson a,
+.llm__panel a:not(.button),
+.contact__panel a:not(.button) {
+  color: var(--clay-deep);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .lesson__meta {
@@ -431,15 +461,83 @@ section[id] {
   font-size: 1.45rem;
 }
 
-.contact__panel {
+.contact__panel,
+.llm__panel {
   max-width: 760px;
   margin: 2rem auto 0;
   padding: 1.4rem;
   text-align: center;
 }
 
+.llm__panel {
+  border: 1px solid var(--line);
+  background: var(--white);
+  border-radius: 0.85rem;
+}
+
+.llm__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
 .contact__panel .button {
   margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+  .bd-container {
+    width: min(100% - 1rem, 42rem);
+  }
+
+  .section {
+    padding: 3.5rem 0 2.4rem;
+  }
+
+  .home {
+    min-height: auto;
+  }
+
+  .home__container {
+    padding: 1.35rem 0 2rem;
+  }
+
+  .home__title {
+    max-width: 13ch;
+  }
+
+  .home__button .button,
+  .lesson__pager .button,
+  .llm__actions .button {
+    width: 100%;
+  }
+
+  .course__layout {
+    gap: 0.85rem;
+    margin-top: 1.6rem;
+  }
+
+  .course__intro img {
+    display: none;
+  }
+
+  .course__sidebar,
+  .lesson,
+  .resource,
+  .contact__panel,
+  .llm__panel {
+    border-radius: 0.65rem;
+  }
+
+  .lesson {
+    min-height: 0;
+  }
+
+  .lesson__pager {
+    display: grid;
+  }
 }
 
 .footer {

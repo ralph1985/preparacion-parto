@@ -15,16 +15,16 @@ El postparto necesita información práctica y expectativas realistas.
 ## ⏳ Recuperación postparto ✨✨✨
 
 - Recuperación física aproximada:
-  - alrededor de 6 meses para sanar físicamente
+  - las primeras 6 semanas concentran la recuperación inicial, pero suelo pélvico, cicatrices, energía y lactancia pueden necesitar meses
 - Recuperación hormonal:
-  - aproximadamente 2 años
+  - muy variable, especialmente si hay lactancia
 - Recuperación emocional / volver a encontrarse:
-  - puede llevar varios años
+  - puede llevar semanas, meses o más según la persona y el apoyo disponible
 - Recordatorio importante:
   - cada mujer tiene tiempos distintos
   - evitar comparaciones
 - Referencia:
-  - https://youtube.com/shorts/s2Xld5PQoq8?si=XSgv4NhfnCXJu7bC
+  - usar fuentes sanitarias y la valoración de matrona/ginecología como referencia principal
 
 ## 🚶 Primeras horas y primeros días ✨✨✨
 
@@ -79,7 +79,7 @@ El postparto necesita información práctica y expectativas realistas.
 - Priorizar descanso dentro de lo posible
 - Alimentación rica en proteína para favorecer recuperación
 - No convertirlo en dieta estricta
-- “Los vinos de Moradillo mejor para después del postparto y cuando ya toque celebrar 😅”
+- Si hay lactancia, consultar recomendaciones actualizadas sobre alcohol y tiempos de seguridad.
 
 ## 💊 Analgesia y dolor ✨✨✨
 
@@ -182,8 +182,10 @@ El postparto necesita información práctica y expectativas realistas.
 - Dolor o hinchazón llamativa en piernas
 - Tristeza profunda persistente
 - Sensación de no poder cuidar al bebé
+- Ideas de hacerse daño o de hacer daño al bebé
 - Dolor intenso en pecho
 - Enrojecimiento mamario importante
+- Falta de aire, dolor torácico, desmayo o confusión
 - Pedir ayuda pronto suele evitar complicaciones
 
 # 🧠 Adaptación emocional tras el parto ✨✨✨
