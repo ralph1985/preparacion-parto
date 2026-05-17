@@ -17,4 +17,8 @@ Esta lección separa señales habituales de inicio de parto de situaciones en la
 - Disminución clara de movimientos fetales.
 - Líquido amniótico con color u olor preocupante.
 
+## ☎️ Contacto de asistencia ✨✨✨
+
+- Teléfono asistencia matronas 24/7: 651834333
+
 Completar con las indicaciones concretas del hospital, matrona o equipo sanitario de referencia.
