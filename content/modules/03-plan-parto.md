@@ -93,6 +93,38 @@ El plan de parto ayuda a pensar preferencias y a comunicarlas. No es un contrato
 - Ropa y pañales para el bebé.
 - Cargador, agua, snacks si están permitidos y objetos de apoyo.
 
+## 🏥 Qué llevar al hospital ✨✨✨
+
+### 📄 Documentación ✨✨✨
+
+- Historia del embarazo
+- Tarjeta sanitaria
+- DNI
+- Libro de familia o partida de matrimonio
+
+### 🎵 Música ✨✨✨
+
+- Llevar música preparada
+
+### 🥤 Bebida ✨✨✨
+
+- Llevar bebida
+- Prioridad:
+  - Agua
+  - Agua de coco
+  - Bebida isotónica
+
+### 🧼 Aseo y comodidad ✨✨✨
+
+- Bolsa de aseo
+- Zapatillas cómodas
+
+### 👶 Bebé (Irati) ✨✨✨
+
+- Ropa para el alta
+- Gorrito extra
+- Manta extra
+
 ## 🧳 Preparativos hospital / bolsa ✨✨✨
 
 ### 🔋 Tecnología y preparación ✨✨✨
