@@ -7,22 +7,26 @@ const navLinks = document.querySelectorAll(".nav__link");
 const sections = document.querySelectorAll("section[id]");
 const header = document.getElementById("header");
 const courseNav = document.getElementById("course-nav");
+const courseDrawerNav = document.getElementById("course-drawer-nav");
 const lessonPanel = document.getElementById("lesson-panel");
-const courseSidebar = document.getElementById("course-sidebar");
-const courseDrawerToggle = document.getElementById("course-drawer-toggle");
+const courseDrawer = document.getElementById("course-drawer");
+const courseDrawerOpen = document.getElementById("course-drawer-open");
 const courseDrawerClose = document.getElementById("course-drawer-close");
-const courseBackdrop = document.getElementById("course-backdrop");
 
 let course = null;
 let flatLessons = [];
 
-function setCourseDrawerOpen(isOpen) {
-  if (!courseSidebar || !courseDrawerToggle || !courseBackdrop) return;
+function openCourseDrawer() {
+  if (!courseDrawer || courseDrawer.open) return;
 
-  courseSidebar.classList.toggle("is-open", isOpen);
-  courseDrawerToggle.setAttribute("aria-expanded", String(isOpen));
-  courseBackdrop.hidden = !isOpen;
-  document.body.classList.toggle("course-drawer-open", isOpen);
+  courseDrawer.showModal();
+  const activeLesson = courseDrawer.querySelector(".course__lesson.is-active");
+  if (activeLesson) activeLesson.scrollIntoView({ block: "center" });
+}
+
+function closeCourseDrawer() {
+  if (!courseDrawer || !courseDrawer.open) return;
+  courseDrawer.close();
 }
 
 function setMenuOpen(isOpen) {
@@ -41,7 +45,7 @@ if (navToggle && navMenu) {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
       setMenuOpen(false);
-      setCourseDrawerOpen(false);
+      closeCourseDrawer();
     }
   });
 
@@ -57,18 +61,18 @@ navLinks.forEach((link) => {
   link.addEventListener("click", () => setMenuOpen(false));
 });
 
-if (courseDrawerToggle && courseSidebar) {
-  courseDrawerToggle.addEventListener("click", () => {
-    setCourseDrawerOpen(!courseSidebar.classList.contains("is-open"));
-  });
+if (courseDrawerOpen) {
+  courseDrawerOpen.addEventListener("click", openCourseDrawer);
 }
 
 if (courseDrawerClose) {
-  courseDrawerClose.addEventListener("click", () => setCourseDrawerOpen(false));
+  courseDrawerClose.addEventListener("click", closeCourseDrawer);
 }
 
-if (courseBackdrop) {
-  courseBackdrop.addEventListener("click", () => setCourseDrawerOpen(false));
+if (courseDrawer) {
+  courseDrawer.addEventListener("click", (event) => {
+    if (event.target === courseDrawer) closeCourseDrawer();
+  });
 }
 
 function updateActiveSection() {
@@ -205,9 +209,9 @@ function setLessonHash(id) {
 }
 
 function renderCourseNav(activeId) {
-  if (!courseNav || !course) return;
+  if (!course) return;
 
-  courseNav.innerHTML = course.modules
+  const navHtml = course.modules
     .map((module) => {
       const lessons = module.lessons
         .map(
@@ -225,8 +229,12 @@ function renderCourseNav(activeId) {
     })
     .join("");
 
-  courseNav.querySelectorAll(".course__lesson").forEach((link) => {
-    link.addEventListener("click", () => setCourseDrawerOpen(false));
+  [courseNav, courseDrawerNav].forEach((nav) => {
+    if (!nav) return;
+    nav.innerHTML = navHtml;
+    nav.querySelectorAll(".course__lesson").forEach((link) => {
+      link.addEventListener("click", closeCourseDrawer);
+    });
   });
 }
 
