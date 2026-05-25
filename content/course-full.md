@@ -1390,6 +1390,8 @@ Cuidados básicos para los primeros días y semanas del recién nacido. Son paut
 
 - Limpiarlo una vez al día o cuando esté sucio.
 - Utilizar agua y jabón.
+- No usar Betadine.
+- Si el centro indica antiséptico, confirmar si debe ser clorhexidina acuosa y cómo aplicarla.
 - Consultar si hay mal olor, enrojecimiento importante, secreción o sangrado persistente.
 
 ### Cremas y geles
