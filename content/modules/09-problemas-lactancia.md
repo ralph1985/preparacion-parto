@@ -25,6 +25,12 @@ Muchas dificultades tienen solución con acompañamiento adecuado. Si hay fiebre
 
 - muchas dificultades tienen solución con acompañamiento adecuado
 
+## Cuidado de pezones
+
+- La lanolina purificada de grado médico puede usarse como apoyo para cuidar los pezones.
+- Aplicar poca cantidad y revisar con matrona o asesora de lactancia si hay dolor, grietas o mala evolución.
+- Si hay heridas, sangrado, fiebre o dolor intenso, conviene consultar pronto.
+
 ## 🥬 Repollo para aliviar ✨✨✨
 
 - Puede ayudar a aliviar congestión mamaria / inflamación

@@ -1174,6 +1174,12 @@ Muchas dificultades tienen solución con acompañamiento adecuado. Si hay fiebre
 
 - muchas dificultades tienen solución con acompañamiento adecuado
 
+## Cuidado de pezones
+
+- La lanolina purificada de grado médico puede usarse como apoyo para cuidar los pezones.
+- Aplicar poca cantidad y revisar con matrona o asesora de lactancia si hay dolor, grietas o mala evolución.
+- Si hay heridas, sangrado, fiebre o dolor intenso, conviene consultar pronto.
+
 ## 🥬 Repollo para aliviar ✨✨✨
 
 - Puede ayudar a aliviar congestión mamaria / inflamación
@@ -1303,6 +1309,24 @@ Esta lección reúne cuidados diarios y señales para consultar.
 - Sueño seguro.
 - Llanto y consuelo.
 - Paseos y entorno.
+
+## Manejo básico
+
+- Para coger al bebé, sujetar siempre cabeza y cuello.
+- Moverlo con calma, acercándolo al cuerpo antes de levantarlo.
+- Recurso práctico para revisar la postura: https://youtube.com/shorts/jQmas735v30?is=sxmwYTUADuQnPaJc
+
+## Sueño y descanso
+
+- Los primeros meses debe dormir boca arriba, salvo indicación sanitaria distinta.
+- Mantener la habitación bien ventilada.
+- Evitar humo, calor excesivo y objetos sueltos en la zona de sueño.
+
+## Despertar para comer
+
+- Si cuesta despertarlo para una toma, puede ayudar quitarle el pañal.
+- También puede ayudar cambiarlo con suavidad, hablarle y dejarlo en contacto piel con piel.
+- Consultar con pediatría o matrona si cuesta despertarlo, está muy adormilado o no se alimenta bien.
 
 ## Observación
 
