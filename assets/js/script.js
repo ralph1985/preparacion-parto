@@ -317,7 +317,7 @@ function renderChecklist() {
             ${items}
           </ul>
           <div class="checklist__actions">
-            <a href="#leccion=${escapeHtml(section.lessonId)}" data-checklist-lesson="${escapeHtml(section.lessonId)}">Ver apuntes</a>
+            <a href="./curso.html#leccion=${escapeHtml(section.lessonId)}" data-checklist-lesson="${escapeHtml(section.lessonId)}">Ver apuntes</a>
             <button type="button" data-reset-section="${escapeHtml(section.id)}">Reiniciar</button>
           </div>
         </article>
@@ -355,6 +355,10 @@ function renderChecklist() {
         event.preventDefault();
         setLessonHash(lessonId);
         courseSection.scrollIntoView({ block: "start" });
+      }
+      if (lessonId && !courseSection) {
+        event.preventDefault();
+        window.location.href = `./curso.html#${new URLSearchParams({ leccion: lessonId }).toString()}`;
       }
       return;
     }

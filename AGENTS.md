@@ -4,7 +4,8 @@
 
 This is a static, framework-free Spanish website for private/family childbirth preparation notes.
 
-- Entry point: `index.html`
+- Main page: `index.html`
+- Course page: `curso.html`
 - Styles: `assets/css/style.css`
 - Client logic: `assets/js/script.js`
 - Course index: `content/course.json`
@@ -51,8 +52,8 @@ If CSS, JS, images, or favicons change before a real deploy, update asset cache-
 
 ## Architecture Notes
 
-- `assets/js/script.js` loads `content/course.json`, flattens lessons, renders course navigation, fetches Markdown, and renders a deliberately small Markdown subset.
-- Desktop course navigation is the sidebar inside the course section.
+- `assets/js/script.js` loads `content/course.json`, flattens lessons, renders course navigation in `curso.html`, fetches Markdown, and renders a deliberately small Markdown subset.
+- Desktop course navigation is the sidebar inside the course page.
 - Mobile course navigation is a separate `<dialog>` bottom sheet populated from the same course data. Do not confuse this with the top site navigation.
 - `content/course-full.md` is generated from `content/course.json` and `content/modules/*.md`; do not hand-edit it unless the generator is also updated.
 - `llms.txt` is for understanding the website content. This `AGENTS.md` is for coding agents.

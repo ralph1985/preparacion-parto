@@ -2,15 +2,17 @@
 
 Web estática privada/familiar para organizar apuntes de clases de preparación al parto como un curso navegable.
 
-El proyecto no usa framework ni proceso de build: el navegador carga `index.html`, los estilos y scripts locales,
-el índice del curso desde `content/course.json` y cada lección desde archivos Markdown en `content/modules/`.
+El proyecto no usa framework ni proceso de build: el navegador carga `index.html` para la portada, `curso.html` para el
+lector del curso, los estilos y scripts locales, el índice del curso desde `content/course.json` y cada lección desde
+archivos Markdown en `content/modules/`.
 
 > Contenido educativo: la web debe revisarse con criterio sanitario antes de publicarse con apuntes reales. No sustituye
 > el seguimiento de matrona, ginecología, pediatría, urgencias ni del equipo sanitario.
 
 ## Estructura
 
-- `index.html`: portada, lector del curso y secciones principales.
+- `index.html`: portada, checklist, recursos, enlaces LLM y contacto.
+- `curso.html`: lector del curso, índice de lecciones y panel Markdown.
 - `assets/css/style.css`: identidad visual y responsive.
 - `assets/js/script.js`: navegación, carga del índice y renderizado Markdown.
 - `assets/vendor/aos/`: librería local para animaciones al hacer scroll.
@@ -24,7 +26,7 @@ el índice del curso desde `content/course.json` y cada lección desde archivos 
 - `robots.txt` y `sitemap.xml`: descubrimiento básico, manteniendo la web marcada como `noindex`.
 - `AGENTS.md`: guía canónica para LLMs/agentes que vayan a modificar código.
 - `CLAUDE.md` y `.github/copilot-instructions.md`: adaptadores para herramientas concretas que remiten a `AGENTS.md`.
-- `scripts/bump-asset-version.sh`: actualiza los parámetros `?v=` de los assets referenciados en `index.html`.
+- `scripts/bump-asset-version.sh`: actualiza los parámetros `?v=` de los assets referenciados en `index.html` y `curso.html`.
 - `vercel.json`: cabeceras de seguridad y caché para el despliegue en Vercel.
 
 ## Desarrollo local
@@ -47,7 +49,7 @@ http://localhost:8080
 
 1. `assets/js/script.js` carga `./content/course.json`.
 2. Aplana los módulos en una lista de lecciones.
-3. Renderiza el índice lateral del curso.
+3. En `curso.html`, renderiza el índice lateral del curso y el índice móvil en un diálogo.
 4. Lee la lección indicada por el hash `#leccion=<id>` o abre la primera.
 5. Convierte un subconjunto simple de Markdown a HTML.
 
@@ -57,8 +59,8 @@ sustituirlo por un parser Markdown probado o ampliar el renderizador con tests m
 
 ## Lectura por LLMs
 
-La portada carga las lecciones mediante `fetch`, así que un lector que no ejecute JavaScript puede no ver todo el
-contenido del curso. Para compartir la web con ChatGPT u otro LLM, la portada enlaza:
+El lector de `curso.html` carga las lecciones mediante `fetch`, así que un lector que no ejecute JavaScript puede no ver
+todo el contenido del curso. Para compartir la web con ChatGPT u otro LLM, la portada enlaza:
 
 - `llms.txt`: mapa breve del sitio, prioridades de interpretación y fuentes base.
 - `content/course-full.md`: curso completo concatenado desde los módulos Markdown.
@@ -102,7 +104,7 @@ desplegar una versión con cambios en CSS, JS o imágenes, ejecuta:
 ./scripts/bump-asset-version.sh
 ```
 
-El script actualiza las referencias de `index.html`.
+El script actualiza las referencias de `index.html` y `curso.html`.
 
 ## Despliegue
 
@@ -111,13 +113,13 @@ Está preparado para Vercel como sitio estático. `vercel.json` define:
 - Cabeceras de seguridad: CSP, HSTS, `X-Content-Type-Options`, `Referrer-Policy` y `Permissions-Policy`.
 - `X-Robots-Tag: noindex, nofollow`, porque el contenido contiene apuntes privados/familiares.
 - Caché larga e inmutable para `/assets/(.*)`.
-- Revalidación inmediata para `/`, `/index.html` y `/content/(.*)`, de forma que los apuntes Markdown puedan cambiar sin
-  depender de una caché prolongada.
+- Revalidación inmediata para `/`, `/index.html`, `/curso.html` y `/content/(.*)`, de forma que los apuntes Markdown
+  puedan cambiar sin depender de una caché prolongada.
 
 ## Comprobación manual antes de publicar
 
 1. Arranca el servidor local.
 2. Abre la portada y comprueba que cargan las imágenes.
 3. Recorre el menú de navegación en móvil y escritorio.
-4. Abre varias lecciones desde el índice y con enlaces anterior/siguiente.
+4. Abre `curso.html`, varias lecciones desde el índice y los enlaces anterior/siguiente.
 5. Revisa que las señales de alarma y cualquier recomendación clínica estén validadas por fuentes profesionales.
