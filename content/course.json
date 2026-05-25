@@ -149,6 +149,11 @@
           "id": "cuidados-bebe",
           "title": "Cuidados básicos del recién nacido",
           "file": "./content/modules/10-cuidados-bebe.md"
+        },
+        {
+          "id": "higiene-recien-nacido",
+          "title": "Higiene, cólicos y masaje infantil",
+          "file": "./content/modules/10-higiene-recien-nacido.md"
         }
       ]
     }

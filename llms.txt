@@ -19,7 +19,7 @@ Sitio privado/familiar de apuntes educativos de preparacion al parto. No sustitu
 - Primeras horas: piel con piel, pinzamiento si procede, primera toma, revision del bebe y recuperacion materna.
 - Puerperio: recuperacion fisica, cesarea, lesion perineal, senales de alarma, organizacion en casa, visitas, tramites y postparto emocional.
 - Lactancia y alimentacion: inicio, calostro, agarre, frecuencia, formula, conservacion de leche, ingurgitacion, mastitis y recursos.
-- Cuidados del bebe: cordon, higiene, panal, temperatura, sueno seguro, llanto, alimentacion y observacion.
+- Cuidados del bebe: cordon, higiene, bano, ropa, panal, temperatura, sueno seguro, llanto, colicos, gases, masaje infantil, alimentacion y observacion.
 
 ## Fuentes base para contraste
 
