@@ -154,6 +154,11 @@
           "id": "higiene-recien-nacido",
           "title": "Higiene, cólicos y masaje infantil",
           "file": "./content/modules/10-higiene-recien-nacido.md"
+        },
+        {
+          "id": "panales-cacas-culete",
+          "title": "Pañales, cacas y cuidado del culete",
+          "file": "./content/modules/10-panales-cacas-culete.md"
         }
       ]
     }
