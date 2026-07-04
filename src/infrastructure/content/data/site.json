@@ -1,0 +1,13 @@
+{
+  "lang": "es",
+  "name": "Preparación al parto",
+  "footer": "© Preparación al parto. Apuntes educativos.",
+  "nav": [
+    { "label": "Inicio", "href": "/" },
+    { "label": "Checklist", "href": "/#checklist" },
+    { "label": "Curso", "href": "/curso/" },
+    { "label": "Recursos", "href": "/#recursos" },
+    { "label": "LLM", "href": "/#llm" },
+    { "label": "Contacto", "href": "/#contacto" }
+  ]
+}

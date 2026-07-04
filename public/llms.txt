@@ -4,9 +4,9 @@ Sitio privado/familiar de apuntes educativos de preparacion al parto. No sustitu
 
 ## Como leer esta web
 
-- La portada carga las lecciones con JavaScript desde `content/course.json`.
-- Para entender todo el curso sin ejecutar JavaScript, lee `content/course-full.md`.
-- Cada leccion original esta en `content/modules/*.md`.
+- La web esta construida con Astro y genera paginas estaticas para cada leccion.
+- Para entender todo el curso sin ejecutar JavaScript, lee `public/content/course-full.md` o la URL `/content/course-full.md`.
+- Cada leccion original esta en `src/infrastructure/content/modules/*.md`.
 - Algunas notas son preferencias personales o protocolos del centro de referencia, no recomendaciones universales.
 
 ## Contenido principal

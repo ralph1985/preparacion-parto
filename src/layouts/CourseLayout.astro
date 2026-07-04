@@ -1,0 +1,87 @@
+---
+import CourseNav from "../components/ui/CourseNav.astro";
+import BaseLayout from "./BaseLayout.astro";
+import type { Course } from "../domain/course";
+import type { PageMeta, SiteSettings } from "../domain/site";
+
+interface Props {
+  site: SiteSettings;
+  course: Course;
+  meta: PageMeta;
+  activeLessonId?: string;
+}
+
+const { site, course, meta, activeLessonId } = Astro.props;
+---
+
+<BaseLayout site={site} meta={meta} currentPath={Astro.url.pathname}>
+  <section class="course section course--page" id="curso">
+    <div class="bd-container">
+      <h1 class="section-title" data-aos="fade-up">Curso</h1>
+      <p class="section-subtitle" data-aos="fade-up">
+        Lecciones ordenadas desde la preparación previa hasta los primeros
+        cuidados en casa. En móvil, el índice se abre solo cuando lo necesitas.
+      </p>
+
+      <div class="course__layout">
+        <aside class="course__sidebar" aria-label="Índice del curso">
+          <div class="course__intro">
+            <img
+              src="/assets/img/generated/modulos-preparacion-parto.png?v=20260525174230"
+              alt="Apuntes de preparación al parto sobre una mesa"
+              width="1536"
+              height="1536"
+              loading="lazy"
+              decoding="async"
+            />
+            <p>
+              Selecciona una lección para abrir tus apuntes. Para lectura
+              completa sin JavaScript usa la versión Markdown.
+            </p>
+          </div>
+          <CourseNav course={course} activeLessonId={activeLessonId} />
+        </aside>
+
+        <article class="lesson" id="lesson-panel">
+          <slot />
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <button
+    class="course-fab"
+    id="course-drawer-open"
+    type="button"
+    aria-controls="course-drawer"
+    aria-haspopup="dialog"
+  >
+    Índice
+  </button>
+
+  <dialog
+    class="course-drawer"
+    id="course-drawer"
+    aria-labelledby="course-drawer-title"
+  >
+    <div class="course-drawer__header">
+      <div>
+        <p class="course-drawer__eyebrow">Curso</p>
+        <h2 id="course-drawer-title">Índice de lecciones</h2>
+      </div>
+      <button
+        class="course-drawer__close"
+        id="course-drawer-close"
+        type="button"
+        aria-label="Cerrar índice"
+      >
+        Cerrar
+      </button>
+    </div>
+    <CourseNav
+      course={course}
+      activeLessonId={activeLessonId}
+      className="course__nav course-drawer__nav"
+    />
+  </dialog>
+</BaseLayout>

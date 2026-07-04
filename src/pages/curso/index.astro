@@ -1,0 +1,40 @@
+---
+import CourseLayout from "../../layouts/CourseLayout.astro";
+import { getCourse } from "../../infrastructure/content/local-course-repository";
+import { getSiteSettings } from "../../infrastructure/content/local-site-repository";
+
+const site = await getSiteSettings();
+const course = await getCourse();
+const firstLesson = course.modules[0]?.lessons[0];
+const meta = {
+  title: "Curso | Preparación al parto",
+  description:
+    "Curso privado de preparación al parto con lecciones sobre embarazo, parto, postparto, lactancia y cuidados del bebé.",
+  ogTitle: "Curso | Preparación al parto",
+  ogDescription:
+    "Lecciones privadas de preparación al parto organizadas por módulos y cargadas desde Markdown.",
+  ogImage:
+    "/assets/img/generated/modulos-preparacion-parto.png?v=20260525174230",
+};
+---
+
+<CourseLayout site={site} course={course} meta={meta}>
+  <div class="lesson__placeholder">
+    <p class="lesson__eyebrow">Empieza aquí</p>
+    <h2>Curso multipágina</h2>
+    <p>
+      Cada lección tiene su propia URL estática para mejorar lectura, enlaces y
+      acceso sin JavaScript. Puedes empezar por la primera lección o elegir
+      cualquier tema en el índice.
+    </p>
+    {
+      firstLesson && (
+        <p>
+          <a class="button button--primary" href={`/curso/${firstLesson.id}/`}>
+            Empezar: {firstLesson.title}
+          </a>
+        </p>
+      )
+    }
+  </div>
+</CourseLayout>

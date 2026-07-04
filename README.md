@@ -1,87 +1,58 @@
 # Preparación al parto
 
-Web estática privada/familiar para organizar apuntes de clases de preparación al parto como un curso navegable.
-
-El proyecto no usa framework ni proceso de build: el navegador carga `index.html` para la portada, `curso.html` para el
-lector del curso, los estilos y scripts locales, el índice del curso desde `content/course.json` y cada lección desde
-archivos Markdown en `content/modules/`.
+Web estática privada/familiar para organizar apuntes de preparación al parto como curso multipágina.
 
 > Contenido educativo: la web debe revisarse con criterio sanitario antes de publicarse con apuntes reales. No sustituye
 > el seguimiento de matrona, ginecología, pediatría, urgencias ni del equipo sanitario.
 
 ## Estructura
 
-- `index.html`: portada, checklist, recursos, enlaces LLM y contacto.
-- `curso.html`: lector del curso, índice de lecciones y panel Markdown.
-- `assets/css/style.css`: identidad visual y responsive.
-- `assets/js/script.js`: navegación, carga del índice y renderizado Markdown.
-- `assets/vendor/aos/`: librería local para animaciones al hacer scroll.
-- `assets/fonts/`: fuentes autoalojadas usadas por la interfaz.
-- `assets/img/favicons/`: favicon SVG y PNG.
-- `assets/img/generated/`: imágenes principales de la web.
-- `content/course.json`: índice de módulos y lecciones.
-- `content/modules/*.md`: apuntes editables.
-- `content/course-full.md`: versión agregada del curso para lectores sin JavaScript y LLMs.
-- `llms.txt`: resumen estructurado para que un LLM entienda qué contiene la web y qué fuente consultar.
-- `robots.txt` y `sitemap.xml`: descubrimiento básico, manteniendo la web marcada como `noindex`.
-- `AGENTS.md`: guía canónica para LLMs/agentes que vayan a modificar código.
-- `CLAUDE.md` y `.github/copilot-instructions.md`: adaptadores para herramientas concretas que remiten a `AGENTS.md`.
-- `scripts/bump-asset-version.sh`: actualiza los parámetros `?v=` de los assets referenciados en `index.html` y `curso.html`.
-- `vercel.json`: cabeceras de seguridad y caché para el despliegue en Vercel.
+- `src/pages/index.astro`: portada, checklist, recursos, LLM y contacto.
+- `src/pages/curso/index.astro`: índice/entrada del curso.
+- `src/pages/curso/[lessonId].astro`: página estática de cada lección.
+- `src/layouts/`: layouts compartidos.
+- `src/components/` y `src/sections/`: UI Astro.
+- `src/scripts/site.js`: JavaScript vanilla para navegación, drawer móvil y checklist.
+- `src/styles/main.css`: estilos globales.
+- `src/infrastructure/content/data/course.json`: índice de módulos y lecciones.
+- `src/infrastructure/content/modules/*.md`: apuntes editables.
+- `public/content/course-full.md`: versión agregada generada para lectores sin JavaScript y LLMs.
+- `public/llms.txt`: resumen estructurado para LLMs.
+- `public/assets/`: fuentes, imágenes, favicons y assets públicos.
+- `AGENTS.md`, `PROJECT_CONTEXT.md` y `docs/agent-memory/*`: instrucciones y memoria estable para agentes.
+- `vercel.json`: cabeceras de seguridad y caché.
 
 ## Desarrollo local
 
-El lector usa `fetch`, así que abrir el HTML directamente con `file://` no es suficiente. Sirve la carpeta con un
-servidor local:
+Usa pnpm vía Corepack:
 
 ```bash
-cd preparacion-parto
-python3 -m http.server 8080
+corepack pnpm install
+corepack pnpm run dev
 ```
 
 Después abre:
 
 ```text
-http://localhost:8080
+http://localhost:4321
 ```
 
-## Funcionamiento
-
-1. `assets/js/script.js` carga `./content/course.json`.
-2. Aplana los módulos en una lista de lecciones.
-3. En `curso.html`, renderiza el índice lateral del curso y el índice móvil en un diálogo.
-4. Lee la lección indicada por el hash `#leccion=<id>` o abre la primera.
-5. Convierte un subconjunto simple de Markdown a HTML.
-
-El parser Markdown integrado soporta encabezados `#` hasta `######`, listas ordenadas, listas sin ordenar, negrita,
-cursiva, texto en código y enlaces básicos. Si necesitas tablas, citas o bloques de código, conviene
-sustituirlo por un parser Markdown probado o ampliar el renderizador con tests manuales claros.
-
-## Lectura por LLMs
-
-El lector de `curso.html` carga las lecciones mediante `fetch`, así que un lector que no ejecute JavaScript puede no ver
-todo el contenido del curso. Para compartir la web con ChatGPT u otro LLM, la portada enlaza:
-
-- `llms.txt`: mapa breve del sitio, prioridades de interpretación y fuentes base.
-- `content/course-full.md`: curso completo concatenado desde los módulos Markdown.
-
-Si editas módulos, regenera `content/course-full.md` antes de publicar para que coincida con la web.
+## Comprobaciones
 
 ```bash
-node scripts/build-course-full.mjs
+corepack pnpm run lint
+corepack pnpm run build
+git diff --check
 ```
 
-## Trabajo con LLMs de código
-
-Para modificar el proyecto con un agente de código, usa `AGENTS.md` como fuente principal de instrucciones. `CLAUDE.md`
-y `.github/copilot-instructions.md` existen para herramientas que buscan esos nombres concretos, pero delegan en
-`AGENTS.md` para evitar divergencias.
+El build ejecuta `node scripts/build-course-full.mjs` antes de Astro, así que `public/content/course-full.md` queda alineado con el curso.
 
 ## Añadir o editar apuntes
 
-1. Edita o crea un archivo Markdown en `content/modules/`.
-2. Añade la lección a `content/course.json` con un `id` único, título visible y ruta del archivo.
-3. Revisa la web servida localmente.
+1. Edita o crea un archivo Markdown en `src/infrastructure/content/modules/`.
+2. Añade la lección a `src/infrastructure/content/data/course.json` con `id`, título visible y ruta.
+3. Ejecuta `corepack pnpm run build`.
+4. Revisa la ruta generada `/curso/<id>/`.
 
 Ejemplo:
 
@@ -89,37 +60,30 @@ Ejemplo:
 {
   "id": "nueva-leccion",
   "title": "Nueva lección",
-  "file": "./content/modules/11-nueva-leccion.md"
+  "file": "./modules/11-nueva-leccion.md"
 }
 ```
 
-El contenido actual es una base placeholder para sustituir por apuntes reales.
+## Arquitectura
 
-## Assets y caché
+La web es Astro con salida estática. El curso no depende de `fetch` en el navegador: Astro lee el índice y los Markdown en build, renderiza una página por lección y mantiene el drawer móvil como navegación progresiva.
 
-Los assets se enlazan con un parámetro de versión (`?v=...`) para evitar cachés antiguas tras publicar cambios. Antes de
-desplegar una versión con cambios en CSS, JS o imágenes, ejecuta:
+El renderizador Markdown propio está en `src/shared/markdown.ts` y soporta encabezados, listas básicas, negrita, cursiva, código inline y enlaces HTTP/HTTPS.
 
-```bash
-./scripts/bump-asset-version.sh
-```
+## LLMs
 
-El script actualiza las referencias de `index.html` y `curso.html`.
+Para compartir la web con ChatGPT u otro LLM:
+
+- `public/llms.txt`: mapa breve del sitio.
+- `public/content/course-full.md`: curso completo concatenado desde los módulos Markdown.
+
+No edites `public/content/course-full.md` a mano; cambia los módulos o el generador.
 
 ## Despliegue
 
-Está preparado para Vercel como sitio estático. `vercel.json` define:
+Vercel sirve el sitio estático generado por Astro. `vercel.json` mantiene:
 
-- Cabeceras de seguridad: CSP, HSTS, `X-Content-Type-Options`, `Referrer-Policy` y `Permissions-Policy`.
-- `X-Robots-Tag: noindex, nofollow`, porque el contenido contiene apuntes privados/familiares.
-- Caché larga e inmutable para `/assets/(.*)`.
-- Revalidación inmediata para `/`, `/index.html`, `/curso.html` y `/content/(.*)`, de forma que los apuntes Markdown
-  puedan cambiar sin depender de una caché prolongada.
-
-## Comprobación manual antes de publicar
-
-1. Arranca el servidor local.
-2. Abre la portada y comprueba que cargan las imágenes.
-3. Recorre el menú de navegación en móvil y escritorio.
-4. Abre `curso.html`, varias lecciones desde el índice y los enlaces anterior/siguiente.
-5. Revisa que las señales de alarma y cualquier recomendación clínica estén validadas por fuentes profesionales.
+- CSP y cabeceras de seguridad.
+- `X-Robots-Tag: noindex, nofollow`.
+- Caché larga para `/assets/(.*)`.
+- Revalidación inmediata para páginas y `/content/(.*)`.

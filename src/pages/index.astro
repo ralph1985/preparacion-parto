@@ -1,0 +1,106 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ChecklistSection from "../sections/ChecklistSection.astro";
+import HomeSection from "../sections/HomeSection.astro";
+import { getSiteSettings } from "../infrastructure/content/local-site-repository";
+
+const site = await getSiteSettings();
+const meta = {
+  title: "Preparación al parto | Guía y checklist",
+  description:
+    "Guía privada con checklist de preparación al parto, parto, postparto, lactancia y cuidados del bebé, revisada como contenido educativo.",
+  ogTitle: "Preparación al parto | Guía y checklist",
+  ogDescription:
+    "Checklist privada y apuntes organizados por módulos para preparar el parto, el postparto, la lactancia y los primeros cuidados del bebé.",
+  ogImage: "/assets/img/generated/hero-preparacion-parto.png?v=20260525174230",
+};
+---
+
+<BaseLayout site={site} meta={meta} currentPath="/">
+  <HomeSection />
+
+  <section class="notice bd-container" aria-label="Aviso importante">
+    <strong>Contenido educativo.</strong>
+    Esta web no sustituye el seguimiento de matrona, ginecología, pediatría, urgencias
+    ni del equipo sanitario. Ante síntomas de alarma o dudas clínicas, consulta con
+    profesionales. Algunas pautas dependen del hospital, la semana de embarazo, antecedentes
+    y situación clínica.
+  </section>
+
+  <ChecklistSection />
+
+  <section class="resources section" id="recursos">
+    <div class="bd-container">
+      <h2 class="section-title" data-aos="fade-up">Recursos</h2>
+      <div class="resources__grid" data-aos="fade-up">
+        <article class="resource">
+          <h3>Checklist hospital</h3>
+          <p>
+            Bolsa, documentación, ropa cómoda, higiene, primeros básicos del
+            bebé y elementos de apoyo.
+          </p>
+        </article>
+        <article class="resource">
+          <h3>Plan de parto</h3>
+          <p>
+            Preferencias, acompañamiento, alivio del dolor, piel con piel,
+            lactancia y comunicación con el equipo.
+          </p>
+        </article>
+        <article class="resource">
+          <h3>Señales de alarma</h3>
+          <p>
+            Listado para revisar con profesionales y adaptar a las indicaciones
+            sanitarias de cada embarazo.
+          </p>
+        </article>
+        <article class="resource">
+          <h3>Fuentes oficiales</h3>
+          <p>
+            Ministerio de Sanidad, Comunidad de Madrid, OMS, IHAN/e-lactancia y
+            guías de lactancia o fórmula cuando aplique.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="llm section" id="llm">
+    <div class="bd-container">
+      <h2 class="section-title" data-aos="fade-up">Lectura para LLM</h2>
+      <div class="llm__panel" data-aos="fade-up">
+        <p>
+          El curso también se exporta como Markdown estático. Para que ChatGPT u
+          otro LLM entienda todo el material al recibir la URL, usa estos
+          documentos:
+        </p>
+        <div class="llm__actions">
+          <a class="button button--primary" href="/content/course-full.md"
+            >Curso completo</a
+          >
+          <a class="button button--secondary" href="/llms.txt">Resumen LLM</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section" id="contacto">
+    <div class="bd-container">
+      <h2 class="section-title" data-aos="fade-up">Contacto</h2>
+      <div class="contact__panel" data-aos="fade-up">
+        <p>
+          Espacio preparado para añadir datos de clases, consulta, reservas o
+          contacto cuando estén definidos.
+        </p>
+        <p>
+          Asistencia matronas 24/7 del centro de referencia: <a
+            href="tel:+34651834333">651 834 333</a
+          >
+        </p>
+        <a class="button button--primary" href="mailto:info@example.com"
+          >Escribir email</a
+        >
+      </div>
+    </div>
+  </section>
+</BaseLayout>

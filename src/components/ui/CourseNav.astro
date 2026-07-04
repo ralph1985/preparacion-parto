@@ -1,0 +1,33 @@
+---
+import type { Course } from "../../domain/course";
+
+interface Props {
+  course: Course;
+  activeLessonId?: string;
+  className?: string;
+}
+
+const { course, activeLessonId, className = "course__nav" } = Astro.props;
+---
+
+<nav class={className} aria-label="Lecciones del curso">
+  {
+    course.modules.map((module) => (
+      <section class="course__module">
+        <h3 class="course__module-title">{module.title}</h3>
+        {module.lessons.map((lesson) => (
+          <a
+            class:list={[
+              "course__lesson",
+              lesson.id === activeLessonId && "is-active",
+            ]}
+            href={`/curso/${lesson.id}/`}
+            aria-current={lesson.id === activeLessonId ? "page" : undefined}
+          >
+            {lesson.title}
+          </a>
+        ))}
+      </section>
+    ))
+  }
+</nav>

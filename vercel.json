@@ -48,7 +48,16 @@
       ]
     },
     {
-      "source": "/curso.html",
+      "source": "/curso/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/curso",
       "headers": [
         {
           "key": "Cache-Control",
