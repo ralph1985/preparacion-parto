@@ -6,7 +6,7 @@
   "packageManager": "pnpm@10.25.0",
   "scripts": {
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
-    "build": "node scripts/build-course-full.mjs && ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "build": "node scripts/build-course-full.mjs && ASTRO_TELEMETRY_DISABLED=1 astro build && pagefind --site dist",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
     "lint": "pnpm run lint:astro && pnpm run lint:js && pnpm run format:check",
     "lint:astro": "ASTRO_TELEMETRY_DISABLED=1 astro check",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.9",
     "@types/node": "26.0.1",
+    "pagefind": "1.5.2",
     "prettier": "3.9.4",
     "prettier-plugin-astro": "0.14.1",
     "typescript": "6.0.3"

@@ -8,9 +8,10 @@ interface Props {
 
 const { site, currentPath } = Astro.props;
 const isCourse = currentPath.startsWith("/curso");
+const isDev = import.meta.env.DEV;
 ---
 
-<header class="l-header" id="header">
+<header class="l-header" id="header" data-pagefind-ignore>
   <nav class="nav bd-container" aria-label="Navegación principal">
     <a href="/" class="nav__brand" aria-label={`Inicio ${site.name}`}>
       <span class="nav__mark" aria-hidden="true">P</span>
@@ -38,6 +39,16 @@ const isCourse = currentPath.startsWith("/curso");
         }
       </ul>
     </div>
+    <button
+      class="nav__search"
+      type="button"
+      data-search-open
+      disabled={isDev}
+      aria-controls={isDev ? undefined : "pagefind-search"}
+      title={isDev ? "Disponible tras build" : "Buscar en el curso"}
+    >
+      {isDev ? "Buscar tras build" : "Buscar"}
+    </button>
     <button
       class="nav__toggle"
       id="nav-toggle"

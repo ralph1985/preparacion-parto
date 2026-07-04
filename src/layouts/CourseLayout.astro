@@ -24,7 +24,11 @@ const { site, course, meta, activeLessonId } = Astro.props;
       </p>
 
       <div class="course__layout">
-        <aside class="course__sidebar" aria-label="Índice del curso">
+        <aside
+          class="course__sidebar"
+          aria-label="Índice del curso"
+          data-pagefind-ignore
+        >
           <div class="course__intro">
             <img
               src="/assets/img/generated/modulos-preparacion-parto.png?v=20260525174230"
@@ -55,14 +59,17 @@ const { site, course, meta, activeLessonId } = Astro.props;
     type="button"
     aria-controls="course-drawer"
     aria-haspopup="dialog"
+    data-course-drawer-open
+    data-pagefind-ignore
   >
-    Índice
+    Ver índice del curso
   </button>
 
   <dialog
     class="course-drawer"
     id="course-drawer"
     aria-labelledby="course-drawer-title"
+    data-pagefind-ignore
   >
     <div class="course-drawer__header">
       <div>

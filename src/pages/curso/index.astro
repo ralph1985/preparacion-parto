@@ -6,6 +6,10 @@ import { getSiteSettings } from "../../infrastructure/content/local-site-reposit
 const site = await getSiteSettings();
 const course = await getCourse();
 const firstLesson = course.modules[0]?.lessons[0];
+const totalLessons = course.modules.reduce(
+  (count, module) => count + module.lessons.length,
+  0,
+);
 const meta = {
   title: "Curso | Preparación al parto",
   description:
@@ -19,13 +23,13 @@ const meta = {
 ---
 
 <CourseLayout site={site} course={course} meta={meta}>
-  <div class="lesson__placeholder">
+  <div class="course-index" data-pagefind-ignore>
     <p class="lesson__eyebrow">Empieza aquí</p>
     <h2>Curso multipágina</h2>
     <p>
-      Cada lección tiene su propia URL estática para mejorar lectura, enlaces y
-      acceso sin JavaScript. Puedes empezar por la primera lección o elegir
-      cualquier tema en el índice.
+      {course.modules.length} módulos y {totalLessons} lecciones con URLs estáticas
+      para lectura, enlaces y acceso sin JavaScript. Puedes empezar por la primera
+      lección o abrir cualquier tema directamente.
     </p>
     {
       firstLesson && (
@@ -36,5 +40,26 @@ const meta = {
         </p>
       )
     }
+    <div class="course-index__grid">
+      {
+        course.modules.map((module, moduleIndex) => (
+          <article class="course-index__module">
+            <p class="course-index__eyebrow">Módulo {moduleIndex + 1}</p>
+            <h3>{module.title}</h3>
+            <p>
+              {module.lessons.length}{" "}
+              {module.lessons.length === 1 ? "lección" : "lecciones"}
+            </p>
+            <ul class="course-index__lessons">
+              {module.lessons.map((lesson) => (
+                <li>
+                  <a href={`/curso/${lesson.id}/`}>{lesson.title}</a>
+                </li>
+              ))}
+            </ul>
+          </article>
+        ))
+      }
+    </div>
   </div>
 </CourseLayout>

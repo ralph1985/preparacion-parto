@@ -22,7 +22,11 @@ const lessons = await getFlatLessons();
 const lessonIndex = lessons.findIndex((item) => item.id === lesson.id);
 const previous = lessons[lessonIndex - 1];
 const next = lessons[lessonIndex + 1];
-const html = renderMarkdown(lesson.markdown);
+const lessonNumber = lessonIndex + 1;
+const lessonTotal = lessons.length;
+const lessonMarkdown = lesson.markdown.replace(/^# .+\r?\n?/, "");
+const html = renderMarkdown(lessonMarkdown);
+const isDev = import.meta.env.DEV;
 const meta = {
   title: `${lesson.title} | Preparación al parto`,
   description: `Lección privada de preparación al parto: ${lesson.title}. Contenido educativo para contrastar con profesionales sanitarios.`,
@@ -40,8 +44,36 @@ const meta = {
   meta={meta}
   activeLessonId={lesson.id}
 >
-  <p class="lesson__meta">{lesson.moduleTitle}</p>
-  <Fragment set:html={html} />
+  <header class="lesson__header">
+    <div>
+      <p class="lesson__meta">{lesson.moduleTitle}</p>
+      <p class="lesson__count">Lección {lessonNumber} de {lessonTotal}</p>
+    </div>
+    <div class="lesson__tools" data-pagefind-ignore>
+      <button
+        class="button button--secondary"
+        type="button"
+        data-search-open
+        disabled={isDev}
+        title={isDev ? "Disponible tras build" : "Buscar en el curso"}
+      >
+        {isDev ? "Buscar tras build" : "Buscar"}
+      </button>
+      <button
+        class="button button--secondary lesson__index-button"
+        type="button"
+        aria-controls="course-drawer"
+        aria-haspopup="dialog"
+        data-course-drawer-open
+      >
+        Ver índice del curso
+      </button>
+    </div>
+  </header>
+  <div data-pagefind-body>
+    <h1 data-pagefind-meta="title">{lesson.title}</h1>
+    <Fragment set:html={html} />
+  </div>
   <nav class="lesson__pager" aria-label="Navegación entre lecciones">
     {
       previous ? (
