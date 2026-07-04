@@ -5,9 +5,6 @@
   "nav": [
     { "label": "Inicio", "href": "/" },
     { "label": "Checklist", "href": "/#checklist" },
-    { "label": "Curso", "href": "/curso/" },
-    { "label": "Recursos", "href": "/#recursos" },
-    { "label": "LLM", "href": "/#llm" },
-    { "label": "Contacto", "href": "/#contacto" }
+    { "label": "Curso", "href": "/curso/" }
   ]
 }

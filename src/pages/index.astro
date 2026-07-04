@@ -14,6 +14,7 @@ const meta = {
     "Checklist privada y apuntes organizados por módulos para preparar el parto, el postparto, la lactancia y los primeros cuidados del bebé.",
   ogImage: "/assets/img/generated/hero-preparacion-parto.png?v=20260525174230",
 };
+const isDev = import.meta.env.DEV;
 ---
 
 <BaseLayout site={site} meta={meta} currentPath="/">
@@ -25,6 +26,50 @@ const meta = {
     ni del equipo sanitario. Ante síntomas de alarma o dudas clínicas, consulta con
     profesionales. Algunas pautas dependen del hospital, la semana de embarazo, antecedentes
     y situación clínica.
+  </section>
+
+  <section class="start section" aria-labelledby="start-title">
+    <div class="bd-container">
+      <h2 class="section-title" id="start-title" data-aos="fade-up">
+        Empieza aquí
+      </h2>
+      <div class="start__grid" data-aos="fade-up">
+        <article class="start-card">
+          <p class="start-card__eyebrow">Paso 1</p>
+          <h3>Checklist</h3>
+          <p>
+            Revisa lo pendiente por momentos: final del embarazo, bolsa, salida
+            al hospital, postparto, lactancia y bebé.
+          </p>
+          <a href="#checklist">Abrir checklist</a>
+        </article>
+        <article class="start-card">
+          <p class="start-card__eyebrow">Paso 2</p>
+          <h3>Curso completo</h3>
+          <p>
+            Entra en los módulos y abre cada lección en su propia página
+            estática, con navegación anterior y siguiente.
+          </p>
+          <a href="/curso/">Ver curso</a>
+        </article>
+        <article class="start-card">
+          <p class="start-card__eyebrow">Paso 3</p>
+          <h3>Buscar un tema</h3>
+          <p>
+            Localiza apuntes concretos sobre lactancia, bolsa, contracciones,
+            pañales u otros temas del curso.
+          </p>
+          <button
+            type="button"
+            data-search-open
+            disabled={isDev}
+            title={isDev ? "Disponible tras build" : "Buscar en el curso"}
+          >
+            {isDev ? "Buscar tras build" : "Buscar un tema"}
+          </button>
+        </article>
+      </div>
+    </div>
   </section>
 
   <ChecklistSection />

@@ -7,8 +7,11 @@ const navLinks = document.querySelectorAll(".nav__link");
 const sections = document.querySelectorAll("section[id]");
 const header = document.getElementById("header");
 const courseDrawer = document.getElementById("course-drawer");
-const courseDrawerOpen = document.getElementById("course-drawer-open");
+const courseDrawerOpenButtons = document.querySelectorAll(
+  "[data-course-drawer-open]",
+);
 const courseDrawerClose = document.getElementById("course-drawer-close");
+const searchOpenButtons = document.querySelectorAll("[data-search-open]");
 const checklistGrid = document.getElementById("checklist-grid");
 const checklistTotal = document.getElementById("checklist-total");
 const checklistResetAll = document.getElementById("checklist-reset-all");
@@ -273,6 +276,23 @@ function closeCourseDrawer() {
   courseDrawer.close();
 }
 
+function openSearchModal() {
+  const modal = document.getElementById("pagefind-search");
+  if (!modal) return;
+
+  if (typeof modal.showModal === "function") {
+    modal.showModal();
+    return;
+  }
+
+  if (typeof modal.show === "function") {
+    modal.show();
+    return;
+  }
+
+  modal.setAttribute("open", "");
+}
+
 function setMenuOpen(isOpen) {
   if (!navMenu || !navToggle) return;
 
@@ -449,9 +469,16 @@ navLinks.forEach((link) => {
   link.addEventListener("click", () => setMenuOpen(false));
 });
 
-if (courseDrawerOpen) {
-  courseDrawerOpen.addEventListener("click", openCourseDrawer);
-}
+courseDrawerOpenButtons.forEach((button) => {
+  button.addEventListener("click", openCourseDrawer);
+});
+
+searchOpenButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    setMenuOpen(false);
+    openSearchModal();
+  });
+});
 
 if (courseDrawerClose) {
   courseDrawerClose.addEventListener("click", closeCourseDrawer);
