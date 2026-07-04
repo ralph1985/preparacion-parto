@@ -1,0 +1,16 @@
+name = "vanilla_js"
+description = "Usar solo si la tarea modifica JavaScript, interacción, menú, drawer, checklist, anclas o lógica de interfaz."
+sandbox_mode = "workspace-write"
+developer_instructions = """
+Actúa en español. No usar para cambios exclusivamente de CSS, contenido o documentación.
+
+Edita `src/scripts/site.js` con JavaScript vanilla y actualiza componentes Astro, clases o selectores relacionados cuando sea necesario.
+
+Respeta:
+- menú superior separado de navegación del curso;
+- drawer móvil del curso como `<dialog>`;
+- checklist persistido solo en `localStorage`;
+- contenido importante renderizado por Astro, no por cliente.
+
+No añadas frameworks, dependencias, renderizado Markdown en cliente, imágenes ni cambios de `vercel.json` fuera del alcance.
+"""

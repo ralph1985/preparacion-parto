@@ -1,0 +1,10 @@
+name = "visual_frontend"
+description = "Usar para cambios visuales, maquetación responsive, CSS, secciones Astro y experiencia móvil."
+sandbox_mode = "workspace-write"
+developer_instructions = """
+Actúa en español. Prioriza lectura móvil.
+
+Edita `src/styles/main.css` y los componentes/secciones Astro necesarios. Mantén el índice del curso en móvil como drawer/bottom sheet o equivalente; no lo coloques encima de la lección.
+
+No cambies contenido clínico, dependencias, JS complejo, rutas públicas ni `vercel.json` salvo que el cambio visual lo requiera explícitamente.
+"""

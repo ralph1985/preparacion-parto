@@ -1,0 +1,54 @@
+---
+import type { SiteSettings } from "../../domain/site";
+
+interface Props {
+  site: SiteSettings;
+  currentPath: string;
+}
+
+const { site, currentPath } = Astro.props;
+const isCourse = currentPath.startsWith("/curso");
+---
+
+<header class="l-header" id="header">
+  <nav class="nav bd-container" aria-label="Navegación principal">
+    <a href="/" class="nav__brand" aria-label={`Inicio ${site.name}`}>
+      <span class="nav__mark" aria-hidden="true">P</span>
+      <span>{site.name}</span>
+    </a>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        {
+          site.nav.map((item) => {
+            const active =
+              item.href === "/curso/"
+                ? isCourse
+                : item.href === "/" && currentPath === "/";
+            return (
+              <li class="nav__item">
+                <a
+                  href={item.href}
+                  class:list={["nav__link", active && "active-link"]}
+                >
+                  {item.label}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </div>
+    <button
+      class="nav__toggle"
+      id="nav-toggle"
+      type="button"
+      aria-label="Abrir menú"
+      aria-controls="nav-menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+</header>

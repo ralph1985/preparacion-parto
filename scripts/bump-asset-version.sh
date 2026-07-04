@@ -1,24 +1,22 @@
 #!/bin/sh
 set -eu
 
-HTML_FILES="index.html curso.html"
+TARGET_FILES="$(find src -type f \( -name '*.astro' -o -name '*.ts' -o -name '*.js' -o -name '*.css' \) | sort)"
 
-for HTML_FILE in $HTML_FILES; do
-  if [ ! -f "$HTML_FILE" ]; then
-    echo "No se encuentra $HTML_FILE"
-    exit 1
-  fi
-done
+if [ -z "$TARGET_FILES" ]; then
+  echo "No se han encontrado archivos fuente"
+  exit 1
+fi
 
 # Timestamp-based version to ensure a fresh asset URL on each commit/deploy.
 VERSION="$(date -u +%Y%m%d%H%M%S)"
 
-for HTML_FILE in $HTML_FILES; do
-  cp "$HTML_FILE" "${HTML_FILE}.bak"
+for TARGET_FILE in $TARGET_FILES; do
+  cp "$TARGET_FILE" "${TARGET_FILE}.bak"
 
-  perl -pe 's{(\./assets/[^"?]+\.(?:css|js|png|jpg|jpeg|svg|webp|gif))(?:\?v=\d+)?}{$1 . "?v='"$VERSION"'"}ge' "${HTML_FILE}.bak" > "$HTML_FILE"
+  perl -pe 's{((?:/assets/|\./assets/)[^"?]+\.(?:css|js|png|jpg|jpeg|svg|webp|gif))(?:\?v=\d+)?}{$1 . "?v='"$VERSION"'"}ge' "${TARGET_FILE}.bak" > "$TARGET_FILE"
 
-  rm -f "${HTML_FILE}.bak"
+  rm -f "${TARGET_FILE}.bak"
 done
 
-echo "Asset version updated to $VERSION in $HTML_FILES"
+echo "Asset version updated to $VERSION in Astro source files"

@@ -1,0 +1,63 @@
+---
+import CourseLayout from "../../layouts/CourseLayout.astro";
+import {
+  getCourse,
+  getFlatLessons,
+} from "../../infrastructure/content/local-course-repository";
+import { getSiteSettings } from "../../infrastructure/content/local-site-repository";
+import { renderMarkdown } from "../../shared/markdown";
+
+export async function getStaticPaths() {
+  const lessons = await getFlatLessons();
+  return lessons.map((lesson) => ({
+    params: { lessonId: lesson.id },
+    props: { lesson },
+  }));
+}
+
+const { lesson } = Astro.props;
+const site = await getSiteSettings();
+const course = await getCourse();
+const lessons = await getFlatLessons();
+const lessonIndex = lessons.findIndex((item) => item.id === lesson.id);
+const previous = lessons[lessonIndex - 1];
+const next = lessons[lessonIndex + 1];
+const html = renderMarkdown(lesson.markdown);
+const meta = {
+  title: `${lesson.title} | Preparación al parto`,
+  description: `Lección privada de preparación al parto: ${lesson.title}. Contenido educativo para contrastar con profesionales sanitarios.`,
+  ogTitle: `${lesson.title} | Preparación al parto`,
+  ogDescription:
+    "Lección privada de preparación al parto, postparto, lactancia o cuidados del bebé.",
+  ogImage:
+    "/assets/img/generated/modulos-preparacion-parto.png?v=20260525174230",
+};
+---
+
+<CourseLayout
+  site={site}
+  course={course}
+  meta={meta}
+  activeLessonId={lesson.id}
+>
+  <p class="lesson__meta">{lesson.moduleTitle}</p>
+  <Fragment set:html={html} />
+  <nav class="lesson__pager" aria-label="Navegación entre lecciones">
+    {
+      previous ? (
+        <a class="button button--secondary" href={`/curso/${previous.id}/`}>
+          Anterior: {previous.title}
+        </a>
+      ) : (
+        <span />
+      )
+    }
+    {
+      next && (
+        <a class="button button--primary" href={`/curso/${next.id}/`}>
+          Siguiente: {next.title}
+        </a>
+      )
+    }
+  </nav>
+</CourseLayout>
