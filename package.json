@@ -14,7 +14,7 @@
     "format:check": "prettier --check package.json astro.config.mjs tsconfig.json prettier.config.mjs \"src/**/*.{astro,ts,js}\" \"scripts/**/*.mjs\""
   },
   "dependencies": {
-    "astro": "7.0.4"
+    "astro": "7.2.8"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.9",
