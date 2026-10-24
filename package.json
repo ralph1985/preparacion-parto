@@ -13,11 +13,9 @@
     "lint:js": "node --check src/scripts/site.js && node --check scripts/build-course-full.mjs",
     "format:check": "prettier --check package.json astro.config.mjs tsconfig.json prettier.config.mjs \"src/**/*.{astro,ts,js}\" \"scripts/**/*.mjs\""
   },
-  "dependencies": {
-    "astro": "7.2.8"
-  },
   "devDependencies": {
     "@astrojs/check": "0.9.9",
+    "astro": "7.4.0",
     "@types/node": "26.0.1",
     "pagefind": "1.5.2",
     "prettier": "3.9.4",
